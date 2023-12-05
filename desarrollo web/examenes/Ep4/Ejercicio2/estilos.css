@@ -1,0 +1,12 @@
+
+h2{
+    text-align: center;
+}
+
+#jupiter, #tierra, #saturno{
+    border: 1px solid rgb(91, 139, 179);
+    margin-right: 15px;
+    margin-top: 20px;
+    padding: 15px
+
+}
