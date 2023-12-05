@@ -2,11 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 4</title>
+
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+
+        .principal{
+            width: 350px;
+            border: 1px solid rgb(143, 145, 142);
+            text-align: center;
+            padding: 40px 20px 40px 20px;
+        }
+
+        .recuadro{
+            display: grid;
+            place-items: center;
+            padding-top: 30px;
+        }
+
+        .entrada{
+            height: 25px;
+            text-align: center;
+        }
+    </style>
+
+    <h4>
+        4.	Realice un script estadístico, 
+            UD. deberá apuntar los números obtenidos por un dado 100 veces, 
+            al final UD deberá mostrar cuantos veces salieron de cada número del dado. 
+            Cada vez que presiono F5 UD deberá mostrar sólo el resumen de lo que saló.
+            Ejemplo:
+            En este juego se obtuvo:
+            Número 1 del dado: 23 veces.
+            Número 2 del dado: 11 veces
+            Número 3 del dado: 19 veces
+            Número 4 del dado: 15 veces
+            Numero 5 del dado: 20 veces
+            Número 6 del dado: 12 veces
+            Total de veces evaluadas: 100 tiros de dado.
+    </h4>
 </head>
 <body>
-    
+
+    <div class="principal">
+        <script>
+
+
+            const numeros = [];
+            const caras = 6;
+            let intentos = 100;  //variable para modificar el numero de intentos 
+            let numero = 0;
+            let iter = 0; //iterador
+            let n1 = 0; //puntos del dado
+            let n2 = 0;
+            let n3 = 0;
+            let n4 = 0;
+            let n5 = 0;
+            let n6 = 0;
+
+            for(let i=1; i<=intentos; i++){
+                numero = tirarDados();
+                numero == 1 ? n1 += 1: n1;
+                numero == 2 ? n2 += 1: n2;
+                numero == 3 ? n3 += 1: n3;
+                numero == 4 ? n4 += 1: n4;
+                numero == 5 ? n5 += 1: n5;
+                numero == 6 ? n6 += 1: n6;
+                iter ++;
+            }
+
+            const resultados = {
+                'n1': n1, 'n2': n2,'n3': n3,'n4': n4,'n5': n5,'n6': n6
+            }
+
+            function mostrarResultados(){
+                killer("En este juego se obtuvo:" + "<br><br>")
+                for(let i=1; i <=caras; i++){
+                    const nombreProp = `n${i}`;
+                    killer(`Numero ${i} del dado se obtuvo: ${resultados[nombreProp]} veces.` + "<br>")
+                }
+                killer('<br>' + `Total de veces evaluadas: ${iter}`)
+            }
+            
+            mostrarResultados();
+            
+
+            function tirarDados(){
+                return Math.floor((Math.random()*6)+1);
+            }
+
+
+            function killer(texto){
+                document.write(texto)
+            } 
+
+
+        </script>
+
+        <!-- <div class ="recuadro"><input class="entrada" type="number" id="numero" placeholder="Cantidad de lanzamientos"></div> -->
+    </div>
+    <!-- zerojlabs -->
 </body>
 </html>

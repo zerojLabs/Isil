@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+
+    <h3>
+        1.	Realizar un script que le pida al usuario 10 números.
+        UD. deberá dar un informe de que números primos  ingreso en la lista 
+        <br>
+    </h3>
+</head>
+<body>
+    
+    <script>
+        
+        const numeros = [];
+
+        for(let i=1; i<=5; i++){
+            const n= parseInt(prompt(`Ingrese el numero ${i}`))
+
+            //si no se ingresa un numero decrementa el contador 
+            isNaN(n) ? i-- : false;
+           
+            let esPrimo = true;
+            for(let j=2; j< i; j++){
+                if(n%j === 0){
+                    esPrimo=false;
+                    break;
+                }
+                esPrimo ? numeros.push(n): false;
+            }
+            }
+
+        kill(numeros)
+
+
+
+
+        function kill(text){
+            document.write(text)
+        }
+    </script>
+</body>
+</html>

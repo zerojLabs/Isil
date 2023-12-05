@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio1</title>
-    <h4>1.	Realizar un script que le pida al usuario 10 números y UD. 
-        deberá dar un informe de que números primos  ingreso en la lista</h4>
+    <title>Ejercicio 1</title>
+
+    <!-- 1.	Realiza un script que le pida al usuario un numero y Ud. 
+    Tendrá que encontrar todos los números primos desde el 2 hasta el número ingresado por el usuario. 
+    El usuario deberá mostrar los números de manera descendente. Y la cantidad de números obtenidos. -->
 </head>
 <body>
     
     <script>
+        const numero = parseInt(prompt("Ingrese un numero:"));
+        const primosNormales = [];
+        let primosNorteños = ""
+        let cant;
 
-        const numeros = [];
-
-        for(let x=0; x<5; x++){
-            let n = parseInt(prompt("Ingrese un numero"))
-            numeros.push(n)
-            if(numeros[x] > 5 ){
-                kill(numeros[x])
+        //bucle que verifica si un numero es tu primo :v
+        for(let i=2; i<=numero; i++){
+            let esPrimo = true;
+            for(let j=2; j< i; j++){
+                if(i%j === 0){
+                    esPrimo=false;
+                    break;
+                }
             }
+            //condicion ternaria,agrega a tus primos al array
+            esPrimo ? primosNormales.push(i): false;
         }
 
+        //nuevo array con el orden invertido
+        //largo del array
+        primosNorteños = primosNormales.reverse();
+        cant = primosNormales.length;
+        let mensaje = `Total de numeros primos hasta ${numero}, hay > ${cant} <`;
 
-        function kill(texto){
+        killer("<br>" + mensaje + "<br><br>" + primosNorteños)
+        
+
+
+        function killer(texto){
             document.write(texto)
         }
+
     </script>
+    <!-- zerojlabs -->
 </body>
 </html>

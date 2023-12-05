@@ -2,11 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <h3>
+        3.	Realice un script que te muestre el tiempo que demoras ingresando el siguiente cuestionario:
+            Nombre:
+            Apellido:
+            Edad:
+            Fecha de Cumpleaños:
+            Colegio
+            Profesión.
+            El programa deberá mostrar toda la información ingresada 
+            además del Tiempo que demoró ingresando estos datos.
+    </h3>
 </head>
 <body>
-    
+
+    <script>
+
+        const inicio = Date.now()  
+
+        const nombre = prompt("Ingresa tu nombre");
+        const apellido = prompt("Ingresa tu apellido");
+        const edad = prompt("Ingresa tu edad")
+        const cumpleaños = prompt("Ingresa la fecha de tu cumpleaños");
+        const colegio = prompt("Ingresa el nombre del colegio en el que estudiaste");
+        const profesion = prompt("Cual es tu profesion?");
+
+        const fin = Date.now()
+        const milisegundos = fin - inicio;
+
+        const segundos = Math.floor(milisegundos / 1000);
+        const minutos = Math.floor(segundos / 60);
+
+        killer(`Nombre > ${nombre}` + "<br>");
+        killer(`Apellido > ${apellido}` + "<br>");
+        killer(`Edad > ${edad}` + "<br>");
+        killer(`Cumpleaños > ${cumpleaños}` + "<br>");
+        killer(`Colegio > ${colegio}` + "<br>");
+        killer(`Profesion > ${profesion}` + "<br><br>");
+
+        killer("Te tardaste en completar el formulario:" + "<br><br>")
+        killer(minutos + " minutos " + segundos % 60 + " segundos" + "<br>")
+
+        function killer(texto){
+            document.write(texto)
+        }
+
+    </script>
+    <!-- zerojlabs -->
 </body>
 </html>

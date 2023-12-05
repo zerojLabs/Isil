@@ -2,11 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 2</title>
+
+    <h3>2.	Realice un script que le pida 10 numeros, 
+        ud deberá imprimir los mismos en una primera línea, 
+        en la segunda deberá imprimir el valor “Y”  de está función:
+		Y=x*x+2*x+20   (siendo X el valor ingresado en la primera línea)</h3>
+      
 </head>
 <body>
-    
+    <script>
+
+        const numeros = [];
+
+        for(let i=1; i<=10; i++){
+            const n = parseInt(prompt(`Ingrese el numero ${i}`))
+            //verifica si no se ingresa un numero
+            isNaN(n) ? i-- : false;
+            numeros.push(n); //agrega al array
+        }
+
+        killer("<br>" + "> " +numeros + "<br><br>")
+
+        //bucle que aplica la funcion
+        for(let i=0; i<10; i++){
+            const x = numeros[i];
+            const y = x * x + 2 * x + 20;
+
+            killer(`> Para x(${x}), y = ${y} ` + "<br>");
+        }
+
+        function killer(texto){
+            document.write(texto)
+        }
+
+    </script>
+    <!-- zerojlabs -->
 </body>
 </html>
