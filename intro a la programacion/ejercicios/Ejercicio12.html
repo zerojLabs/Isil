@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+<body>
+<h3>Ejercicio12: Se le pide hacer una app, y el sistema tiene que decir que el usuario ingreso un numero mayor a 10,
+   ingreso 2 numeros mayores a 10 o no ingreso nungun numero mayor a 10
+<h3>
+
+    <script>
+    var numero1,numero2,numero3
+
+    numero1=parseInt(prompt("ingrese el numero 1"))
+    numero2=parseInt(prompt("ingrese el numero 2"))
+    numero3=10
+
+    if((numero1>numero3)&&(numero2>numero3)){
+        document.write("El numero : " +numero1+ " y el numero " +numero2+ " son mayores que " +numero3+ "<br>")
+    } else{
+        if((numero1<numero3)&&(numero2<numero3))
+        document.write("Usted no ingreso ningun numero mayor a "+numero3+"<br>")
+    }
+
+    if((numero1>numero3)&&(numero2<numero3)){
+        document.write("El numero : " +numero1+ " es mayor que " +numero3+ " y el " +numero2+ " no es mayor a " +numero3+ "<br>")
+    } else {
+        if((numero1<numero3)&&(numero2>numero3))
+        document.write("El numero : " +numero2+ " es mayor que " +numero3+ " y el " +numero1+ " no es mayor a " +numero3+ "<br>")
+    }
+    
+    
+    
+
+        </script>
+    
+        
+        
+</body>
+</html>

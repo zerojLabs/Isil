@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3>Desarrollar un app que te pida nombres de carros
+    hasta que tu le ingreses la palabra final
+    el aplicativo debera mostrarte todos los valores ingresados
+   </h3>
+   
+   
+    <script>
+       var nombres,llave ,carros=[]
+       llave=true
+
+       while(llave){
+           nombres=prompt("ingrese el nombre de un carro")
+           if(nombres=="final"){
+              llave=false
+           }else{
+              carros.push(nombres)
+           }
+       }
+       document.write(carros)
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3>Desarrollar un app que te dibuje el numero 5 en 
+        una matriz de asterisocs de 5 x5
+   </h3>
+      
+    <script>
+      var cinco=[1,2,3,4,5,6,11,12,13,14,15,20,21,22,23,24,25]
+      var siete=[1,2,3,4,5,9,13,17,21]
+      for(var x=1;x<=5;x++){
+         for(var y=1;y<=5;y++){
+            if(cinco.includes(5*(x-1)+y)){
+               document.write("*")
+            }else{
+                document.write("&nbsp&nbsp")
+            }
+         }
+         document.write("<br>")
+      }
+    </script>
+</body>
+</html>

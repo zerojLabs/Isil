@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3></h3>
+    
+   
+    <script>
+        var autos=[],camiones=[],carros=[],frase=[],texto
+
+        autos=["mazda","toyota","kia","datsun","nissan"]
+        camiones=["mercedes","volvo","hino","volswagen"]
+        document.write(autos+"<br>")
+       
+      
+        autos.splice(5,0,"susuki")
+        document.write(autos+"<br>")
+
+        autos.push("hyundai")
+        document.write(autos+"<br>")
+        autos.pop()
+        document.write(autos+"<br>")
+
+        document.write(autos.includes("toyota")+"<br>")
+        texto="LA CABELLERA DEL MANIQUI ES ROJA"
+        frase=texto.split(" ")
+        document.write(frase+"<br>")
+        let palabra="armadillo"
+        let arreglop=palabra.split("")
+        document.write(arreglop+"<br>")
+        let numero=123456
+        let arreglon=numero.toString().split("")
+        document.write(arreglon)
+
+    </script>
+</body>
+</html>

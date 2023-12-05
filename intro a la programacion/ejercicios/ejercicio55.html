@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tEORIA DE FECHAS</title>
+</head>
+<body>
+   <h3>
+      FECHAS
+   </h3>
+      
+    <script>
+      //var fecha = new Date(2023,10,7)
+      //var fecha = new Date("11/07/2023 00:23:55:0.023")
+      var fecha = new Date()
+      //document.write(fecha)
+      var hora =fecha.getHours()
+      var minuto=fecha.getMinutes()
+      var segundo=fecha.getSeconds()
+      var milesima=fecha.getMilliseconds()
+
+      var dia=fecha.getDate()
+      var mes=fecha.getMonth()
+      var año=fecha.getFullYear()
+
+
+      document.write("Hora: "+hora+" Minuto: "+minuto+ " Segundos: "+segundo+" MIlesima:"+milesima+"<br>")
+      document.write("dia: "+dia+" Mes: "+(mes+1)+ " Año: "+año+"<br>")
+     
+    </script>
+</body>
+</html>

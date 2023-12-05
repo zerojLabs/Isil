@@ -1,0 +1,220 @@
+/* ------------------------------------------------------------ */
+/* cabezeras de contacto principal */
+.header-top{
+    background-color: rgb(250, 244, 236);
+}
+
+/* cabezeras de contacto */
+.header-top .contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+/* espaciado entre textos y tamaño de letra*/
+.header-top .contact-info p{
+    margin-right: 20px;
+    font-size: 13px;
+    color: #6c6c6c;
+}
+
+.header-top .contact-info p:last-child {
+    margin-right: 0;
+  }
+
+/* ------------------------------------------------------------ */
+  /* header-main logo */
+.header-main{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* medidas del logo */
+  .header-main img{
+    width: 200px;
+    height: 80px;
+  }
+
+  /* ------------------------------------------------------------ */
+  /* sidebar de navegacion entre paginas */
+  .main-nav{
+    display: flex;
+    background-color:#c5bcbc ;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  
+  /* propiedades, tamaño, color de texto y separacion entre ellos */
+  .main-nav a{
+    margin-right: 80px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: darkslategrey;
+    text-decoration: none;
+  }
+
+  /* cambia color al texto al pasar el mouse */
+  .main-nav a:hover {
+    color: #dbe3ed;
+  }
+  /* ------------------------------------------------------------ */
+
+  /* tamaños de imagen */
+  main .presentacion .imgPresentacion img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  figure{
+    margin-top: 1px;
+  }
+
+  /* nombre de la empresa y ajustes */
+  /* modo de flexk */
+  .empresa{
+    display: flex;
+    padding: 30px;
+    justify-content:space-between;
+    color: #616161;
+  }
+
+  .nombreEmpresa{
+    border-right: 2px solid #948a8a;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-right: 20px;
+    background-color: #f2efef;
+  }
+
+  .nombreEmpresa p{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold; /*negrita */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1;  /*alto de parrafos */
+  }
+
+  /* introduccion:empresa con mas de 29 años..... */
+  .introduccion{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px; 
+    padding-left: 30px;
+
+  }
+  /* parrafos */
+  .introduccion p{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 10px;
+    line-height: 1.1;
+    font-size: 20px;
+  }
+
+  
+  /* PAGINA SERVICIOS */
+  /* ----------------------------------- */
+  #empresa_Servicios{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+  }
+
+    /* parrafos */
+    .info-servicios p{
+        margin-bottom: 25px;
+        margin-top: 25px;
+        margin-right: 25px;
+        line-height: 1.1;
+        font-size: 20px;
+    }
+
+
+  /* PAGINA MAQUINARIA */
+  /* ----------------------------------- */
+  #empresa_Maquinaria{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+  }
+
+/* parrafos */
+.info-maquinaria p{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    line-height: 1.1;
+    font-size: 20px;
+}
+
+
+/* PAGINA CONTACTO */
+  /* ----------------------------------- */
+    #img_contactenos{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+
+    .secciones-info{
+        display: flex;
+        justify-content: center;
+        padding: 5px 50px 5px 50px;
+    }
+
+    .secciones-info p{
+        padding: 15px 50px 10px 50px;
+        margin: 5px;
+        font-size: 20px;
+        color: #616161;
+        text-align: center;
+    }
+
+     .ico-email::before{
+        content: url(../ico/correo.png);
+        width: 20px;
+        height: 20px;
+     }
+
+     .ico-mapa::before{
+        content: url(../ico/map.png);
+        width: 20px;
+        height: 20px;
+     }
+
+     .ico-telefono::before{
+        content: url(../ico/phone.png);
+        width: 20px;
+        height: 20px;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tEORIA DE FECHAS</title>
+</head>
+<body>
+   <h3>
+      Desarrolle un app que te pida 10 numeros, Ud. los debe imprimir
+      en una 1era linea, en una segunda linea ud deberá imprimir los mismos numeros al cuadrdo
+      en una tercera los numeros x10, en una cuarta los numeros impares, y en una quinta los 
+      numros primos   </h3>
+      
+    <script>
+     var numeros,arreglo=[]
+
+     for(var x=1;x<=10;x++){
+        numeros=parseInt(prompt("Ingrese le numero a trabajar"))
+        arreglo.push(numeros)
+     }
+     document.write(arreglo+"<br>")
+     document.write(arreglo.map(cuadrado)+"<br>")
+     document.write(arreglo.map(x10)+"<br>")
+     document.write(arreglo.filter(impares)+"<br>")
+     document.write(arreglo.filter(primo)+"<br>")
+
+     function cuadrado(valor){
+        return (valor*valor)
+     }
+     function x10(valor){
+        return (valor*10)
+     }
+     function impares(valor){
+        if (valor%2!=0){
+           return valor
+        }
+     }
+     function primo(valor){
+          var nprimo=true
+          for(var x=2;x<=valor-1;x++){
+             if(valor%x==0){
+                 nprimo=false
+             }
+          }
+          if((nprimo)&&(valor!=1)){
+             return valor
+          }
+     }
+     
+    </script>
+</body>
+</html>

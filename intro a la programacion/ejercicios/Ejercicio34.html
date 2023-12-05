@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+
+        se le pide al usuario escribir un cuadrado y el app solo dibujara
+        los lados, el contenido vacio
+
+    </h3>
+    <script>
+
+        var lado
+        lado=parseInt(prompt("Ingrese el lado de un cuadrado"))
+
+        for(var x=1;x<=lado;x++){
+            for(var y=1;y<=lado;y++){
+                if((x==1)||(x==lado)){
+                    document.write("*")
+                }else if((y==1)||(y==lado)){
+                    document.write("*")
+                }else {
+                    document.write("&nbsp&nbsp")
+                }
+
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+</html>

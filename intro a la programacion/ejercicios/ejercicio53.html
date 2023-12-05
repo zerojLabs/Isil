@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3>Desarrollar un app que te pida numeros 
+    hasta que los numeros ingresados pasen del valor 100
+    el aplicativo debera mostrarte todos los valores ingresados y la suma
+    de todos ellos
+   </h3>
+      
+    <script>
+      var numero,suma,arreglon=[]
+      suma=0
+      while(suma<100){
+         numero=parseInt(prompt("Ingrese el numero a acumular"))
+         arreglon.push(numero)
+         suma=suma+numero     /*suma+=numero*/
+      }
+      arreglon.push("y la suma es")
+      arreglon.push(suma)
+      document.write(arreglon)
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Se le pide al usuario ingresar 1 dia de la semana y el programa 
+        te mostrara el menu de ese dia (Con el comando switch) 
+    </h3>
+
+    <script>
+        var  dia
+
+        dia=prompt("Ingresa el dia de la semana").toUpperCase()
+
+
+        switch(dia){
+            case "LUNES":
+                document.write("Este dia lunes se come salchipapa")
+                break;
+
+            case "MARTES":
+                document.write("Este dia martes se come arroz con pollo")
+                break;
+
+            case "MIERCOLES":
+                document.write("Este dia miercoles se come tallarines")
+                break;
+
+            case "JUEVES":
+                document.write("Este dia jueves se come ceviche")
+                break;
+
+            case "VIERNES":
+                document.write("Este dia viernes se come pescado")
+                break;
+
+            case "SABADO":
+                document.write("Este dia sabado se come frejoles ")
+                break;
+
+            case "DOMINGO":
+                document.write("Este dia domingo se come aji de gallina")
+                break;
+            default:
+                document.write("dia incorrecto")
+                break;
+        }
+
+        
+    </script>    
+
+</body>
+</html>

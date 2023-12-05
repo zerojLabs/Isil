@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Se le pide al usuario desarrollar una app que nombre los numeros pares del 1 al 100
+    </h3>
+
+    <script>
+        /*1er metodo*/
+
+        for(var x=1;x<=100;x++){
+            
+            if(x%2==0){
+                document.write(x+',')
+            }
+        }
+
+        document.write("<br>")
+
+        /*2do metodo*/
+
+        for(var x=2;x<=100;x=x+2){
+            document.write(x+",")
+        }
+
+
+    </script>
+    
+</body>
+</html>

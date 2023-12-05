@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3>Ejericio10:Desarrolle una app que le pida al usuario el nombre de un empleado
+      la edad, la profesion y las horas trabajadas.
+      Arme la boleta de pago considerando:
+      1. Gana 100 mas si su edad pasa o es 40 años
+      2. Si su profesion es SISTEMAS(mayusculas) la hora vale 50, 
+      si es ADMINISTRACION(mayusculas)=40 DISEÑO(mayusculas)la
+      hora vale 60
+      3 Si tiene hijois gana un bono adicional de 500
+     </h3>
+        
+    <script>
+       var nombre,edad,profesion,horas,hijos,sueldo,papa
+       
+       nombre=prompt("ingrese el nombre del empleado")
+       edad=parseInt(prompt("Ingrese la edad"))
+       profesion=prompt("Ingrese la profesion").toUpperCase()
+       hijos=prompt("¿Tiene hijos (y)(n)?")
+       horas=parseInt(prompt("Ingrese las horas trabajadas"))
+       sueldo=0
+
+       if (profesion=="SISTEMAS"){
+          sueldo=horas*50
+       }
+       if(profesion=="ADMINISTRACION"){
+          sueldo=horas*40
+       }
+       if(profesion=="DISEÑO"){
+          sueldo=horas*60
+       }
+
+       if(edad>=40){
+          sueldo=sueldo+100     /* sueldo+=100 */
+       }
+
+       papa="NO"
+       if(hijos=="y"){
+         papa="SI"
+         sueldo=sueldo+500
+       }
+
+        document.write("El señor se llama: "+nombre+"<br>")
+        document.write("tiene : "+edad+" años"+"<br>")
+        document.write("Su profesion es: "+profesion+"<br>")
+        document.write("El señor "+papa+" tiene hijos"+"<br>")
+        document.write("Su sueldo es: "+sueldo+" Nuevos soles")
+
+
+
+    </script>
+</body>
+</html>

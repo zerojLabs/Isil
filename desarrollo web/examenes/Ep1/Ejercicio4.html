@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+
+    <!-- 4.	Desarrolle una página HTML que muestre un título de primer nivel <h1>, 
+        luego diseñe tres cajas que muestre cada uno un título de nivel <h2> y tres párrafos. 
+        Además, realice lo siguiente:
+        Inserte en cada caja su correspondiente identificador: 
+        id= “parte1”, id= “parte2”, id= “parte3”. 
+        	En la segunda caja, en el primer párrafo use la etiqueta <span>.
+        	Defina con color el selector de hijos para el <span> de la parte2.
+        	Defina con color el selector de hermanos adyacentes para los últimos párrafos. -->
+        
+        <style>
+
+            .caja{
+                border: 2px solid rgb(165, 165, 165);
+                padding: 20px;
+                margin: 20px;
+                width: 700px;
+            }
+
+            #parte1 {
+                background-color: rgb(212, 212, 212);
+            }
+
+            #parte2 {
+                background-color: rgb(212, 212, 212);
+            }
+
+            #parte2 span{
+                color: rgb(30, 141, 145);
+            }
+            
+            #parte3 {
+                background-color: rgb(212, 212, 212);
+            }
+
+            .ultimoParrafo{
+                color: brown;
+            }
+
+        </style>   
+
+
+</head>
+<body>
+    
+    <h1>Lenguajes de programacion populares</h1><br><br>
+
+
+    <div class= "caja" id="parte1">
+        <h2>JavaScript</h2>
+            <p>Lenguaje de scripting, interpretado, que se utiliza para agregar funcionalidad a las páginas web.</p>
+            <p>Es un lenguaje de propósito general, pero se utiliza principalmente para el desarrollo web.</p>
+            <p class="ultimoParrafo">Es un lenguaje dinámico, lo que significa que no necesita ser compilado antes de ejecutarse.</p>
+    </div>
+        
+    <div class= "caja" id="parte2">
+        <h2>Python</h2>
+            <p><span>Lenguaje de propósito general, interpretado, con sintaxis simple y fácil de aprender.</span></p>
+            <p style="">Es versátil y se usa en desarrollo web, ciencia de datos hasta inteligencia artificial</p>
+            <p class="ultimoParrafo">Tiene una enorme cantidad de bibliotecas y marcos de trabajo</p>
+    </div>
+        
+    <div class= "caja" id="parte3">
+        <h2>Java</h2>
+            <p>Lenguaje de propósito general, compilado, con una sintaxis similar al inglés</p>
+            <p>Se utiliza para desarrollar aplicaciones para la web, móviles y escritorio.</p>
+            <p class="ultimoParrafo">Es multiplataforma, su código se puede ejecutar en cualquier dispositivo que tenga un intérprete de Java.</p>
+    </div>
+
+
+</body>
+</html>

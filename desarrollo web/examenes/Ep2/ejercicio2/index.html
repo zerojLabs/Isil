@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <!-- 2.	Desarrolle una página HTML que muestre un texto y una imagen aplicando sombra y borde en ambos
+     -->
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 300px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 2px solid #333;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 3px solid #333;
+            border-radius: 40px;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box">
+            <h3>Cordillera de los Andes</h3>
+        </div>
+        <img src="./galeria/foto.jpg" height="600" width="800">
+
+        <footer>
+            <p>&copy; 2023 Piasaje de los Andes (byZerojLabs)</p>
+        </footer>
+    </body>
+</html>

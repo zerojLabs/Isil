@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        se le pide al usuario el lado de un cuadrado y el app mostrara
+        los numeros del 1 al numero del lado en todos los pisos
+
+    </h3>
+    <script>
+
+        var lado
+
+        lado=parseInt(prompt("Ingrese el lado del cuadrado"))
+
+        for(var x=1;x<=lado;x++){
+            for(var y=1;y<=lado;y++){
+                document.write(y)
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+</html>

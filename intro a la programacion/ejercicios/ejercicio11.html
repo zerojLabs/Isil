@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3>Ejercicio11: Le pide al usuario 3 valores y el sistema debe decir
+       cual es el mayor, el del medio y le menor
+     </h3>
+        
+    <script>
+      var numero1,numero2,numero3
+
+      numero1=parseInt(prompt("Ingrese el nuemro 1"))
+      numero2=parseInt(prompt("Ingrese el nuemro 2"))
+      numero3=parseInt(prompt("Ingrese el nuemro 3"))
+
+      if ((numero1>numero2)&&(numero1>numero3)){
+         document.write("EL numero:"+numero1+" Es el mayor de los tres"+"<br>")
+         if (numero2>numero3){
+            document.write("El numero del medio es:"+numero2+"<br>")
+            document.write("El numero menor es:"+numero3+"<br>")
+         }else{
+            document.write("El numero del medio es:"+numero3+"<br>")
+            document.write("El numero menor es:"+numero2+"<br>")
+         }
+      }
+      if ((numero2>numero1)&&(numero2>numero3)){
+         document.write("EL numero:"+numero2+" Es el mayor de los tres"+"<br>")
+         if (numero1>numero3){
+            document.write("El numero del medio es:"+numero1+"<br>")
+            document.write("El numero menor es:"+numero3+"<br>")
+         }else{
+            document.write("El numero del medio es:"+numero3+"<br>")
+            document.write("El numero menor es:"+numero1+"<br>")
+         }
+      }
+      if ((numero3>numero2)&&(numero3>numero1)){
+         document.write("EL numero:"+numero3+" Es el mayor de los tres"+"<br>")
+         if (numero2>numero1){
+            document.write("El numero del medio es:"+numero2+"<br>")
+            document.write("El numero menor es:"+numero1+"<br>")
+         }else{
+            document.write("El numero del medio es:"+numero1+"<br>")
+            document.write("El numero menor es:"+numero2+"<br>")
+         }
+      }
+
+    </script>
+</body>
+</html>

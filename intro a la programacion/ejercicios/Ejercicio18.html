@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Se le pide al usuario ingresar 5 palabras y el app debe decir que palabras ingresaste
+        y cuantas empezaban con la letra "A"
+    </h3>
+
+    <script>
+        var palabra1,palabra2,palabra3,palabra4,palabra5,contador
+
+        palabra1=prompt("Ingrese la palabra 1").toUpperCase()
+        palabra2=prompt("Ingrese la palabra 2").toUpperCase()
+        palabra3=prompt("Ingrese la palabra 3").toUpperCase()
+        palabra4=prompt("Ingrese la palabra 4").toUpperCase()
+        palabra5=prompt("Ingrese la palabra 5").toUpperCase()
+
+        contador=0
+        acumulador=""
+
+
+        if(palabra1.charAt(0)=="A"){
+            contador++
+            acumulador=acumulador+palabra1+","
+        }
+
+        if(palabra2.charAt(0)=="A"){
+            contador++
+            acumulador=acumulador+palabra2+","
+        }
+
+        if(palabra3.charAt(0)=="A"){
+            contador++
+            acumulador=acumulador+palabra3+","
+        }
+
+        if(palabra4.charAt(0)=="A"){
+            contador++
+            acumulador=acumulador+palabra4+","
+        }
+
+        if(palabra5.charAt(0)=="A"){
+            contador++
+            acumulador=acumulador+palabra5+","
+        }
+
+        document.write("El usuario ingreso:" +palabra1+","+palabra2+","+palabra3+","+palabra4+","+palabra5+"<br>")
+        document.write("De los cuaes solo " +contador+ "empezaban con la letra A y son : " +acumulador)
+
+
+
+
+    </script>
+</body>
+</html>

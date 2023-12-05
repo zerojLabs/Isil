@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>se le pide al usuario ingresar un texto y el app debera contar cuantas vocales "a"
+        hay en el
+    </h3>
+
+    <script>
+        var texto,contador,largo
+
+        texto=prompt("Ingrese el texto a analizar").toUpperCase()
+        largo=texto.length
+        contador=0
+
+        for(var x=0;x<=largo-1;x++){
+            if(texto.charAt(x)=="A"){
+                contador++ 
+            }
+            
+
+        }
+        document.write("El texto ingresado tiene : " +contador+ " Letras A")
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

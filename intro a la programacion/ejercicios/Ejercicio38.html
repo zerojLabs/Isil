@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>
+        se le pide al usuario el alto de un triangulo rectangulo
+        y dibujarlo(debe estar llena de asteriscos)
+    </h3>
+    <script>
+        var alto
+
+        alto=parseInt(prompt("Ingrese el alto del triangulo"))
+
+        for(var x=1;x<=alto;x++){
+            for(var y=1;y<=x;y++){
+                document.write("*")
+
+            }
+            document.write("<br>")
+        }
+
+    </script>
+    
+</body>
+</html>

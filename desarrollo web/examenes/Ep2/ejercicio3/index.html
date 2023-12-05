@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 </title>
+
+    <!-- 3.	Desarrolle una página HTML que muestre una imagen adaptable (responsive) 
+        de tres a cuatro dimensiones diferentes usando los atributos src, srcset y alt -->
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+    
+            h1 {
+                text-align: center;
+            }
+    
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>Michi Astronauta</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="./galeria/michi300.jpg">
+            <source media="(max-width: 1200px)" srcset="./galeria/michi600.jpg">
+            <source media="(max-width: 1920px)" srcset="./galeria/michi1200x700.jpg">
+            <source media="(max-width: 3840px)" srcset="./galeria/michi1920x1080.jpg">
+            <img src="./galeria/michi3840x2400.jpg" alt="Descripción de la imagen">
+        </picture>
+
+        <footer>
+            <p>&copy; 2023 Un michi Astronauta (byZerojLabs)</p>
+        </footer>
+
+</body>
+</html>

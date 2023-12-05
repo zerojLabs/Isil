@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+
+        .recuadro {
+            display: flex;
+            background-color: #0074D9; /* Color de la primera sección */
+            color: #FFFFFF;
+            padding: 5px;
+            margin: 20px 90px 20px 90px;
+            text-align: center;
+        }
+
+        .seccion {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            background-color: #FF4136; /* Color de la segunda sección */
+            color: #FFFFFF;
+        }
+
+        .seccion:nth-child(2) {
+            background-color: #107c1d; /* Color de la tercera sección */
+        }
+
+        .seccion:nth-child(3) {
+            background-color: #b6c211; /* Color de la tercera sección */
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style:disc;
+            padding: auto;
+            margin-left: auto;
+        }
+
+        li {
+            padding: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="recuadro">
+        <div class="seccion">
+            <h2>América del Sur</h2>
+            <ul>
+                <li>Peru</li>
+                <li>Brasil</li>
+                <li>Ecuador</li>
+                <li>Argentina</li>
+            </ul>
+        </div>
+        <div class="seccion">
+            <h2>América del Central</h2>
+            <ul>
+                <li>El Salvador</li>
+                <li>Costa Rica</li>
+                <li>Panama</li>
+                <li>Honduras</li>
+            </ul>
+        </div>
+        <div class="seccion">
+            <h2>América del Norte</h2>
+            <ul>
+                <li>Canada</li>s
+                <li>Mexico</li>
+                <li>Estados Unidos</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

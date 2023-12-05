@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tEORIA DE FECHAS</title>
+</head>
+<body>
+   <h3>
+      Desarrolle un app que te diga cuanto demoraste en escribir tu nombre completo
+   </h3>
+      
+    <script>
+      var nombre,diferencia,minuto
+      var fechai=new Date()
+      diferencia=0
+      minuto=0
+      nombre=prompt("Ingrese su nombre completo")
+      var fechaf=new Date()
+
+      diferencia=fechaf-fechai
+      var segundos=parseInt(diferencia/1000)
+      if(segundos>=60){
+         minuto=parseInt(segundos/60)
+         segundos=segundos-minuto*60
+      }
+
+      document.write("El señor demoré en escriir su nombre:"+ " minutos:"+minuto+" Segundos:"+segundos)
+      
+     
+    </script>
+</body>
+</html>

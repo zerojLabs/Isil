@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        se le pide al usuario ingresar un texto y esta debe mostrar la piramide 
+        del mismo invertida
+    </h3>
+    <script>
+
+        var nombre , largo
+        nombre=prompt("Ingrese el nombre")
+        largo=nombre.length
+
+        for(var x=largo;x>=1;x--){
+            for(var e=x-1;e>=1;e--){
+                document.write("&nbsp&nbsp")
+            }
+            for(var y=x-1;y<=largo-1;y++){
+                document.write(nombre.charAt(y))
+            }
+            document.write("<br>")
+        }
+
+        for(var x=1;x<=largo;x++){
+            for(var e=x-1;e>=1;e--){
+                document.write("&nbsp&nbsp")
+            }
+            for(var y=x-1;y<=largo-1;y++){
+                document.write(nombre.charAt(y))
+            }
+            document.write("<br>")
+        }
+
+
+
+
+    </script>
+</body>
+</html>

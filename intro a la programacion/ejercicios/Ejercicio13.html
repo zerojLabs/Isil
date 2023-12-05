@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Se le pide al usuario ingresar 10 numeros y el resultado debe ser mostrar la cantidad
+        de numeros impares que ingreso
+        ejemplo:
+        "el señor ingreso estos 10 numeros :......
+        dentro de los cuales : 6 son impares
+    </h3>
+    <script>
+        var num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,contador
+
+        num1=parseInt(prompt("Ingrese el primer numero"))
+        num2=parseInt(prompt("Ingrese el segundo numero"))
+        num3=parseInt(prompt("Ingrese el tercero numero"))
+        num4=parseInt(prompt("Ingrese el cuarto numero"))
+        num5=parseInt(prompt("Ingrese el quinto numero"))
+        num6=parseInt(prompt("Ingrese el sexto numero"))
+        num7=parseInt(prompt("Ingrese el septimo numero"))
+        num8=parseInt(prompt("Ingrese el octavo numero"))
+        num9=parseInt(prompt("Ingrese el noveno numero"))
+        num10=parseInt(prompt("Ingrese el decimo numero"))
+        contador=0
+
+        if(num1%2!=0){        /*contador +1 */
+            contador++
+        }
+
+        if(num2%2!=0){
+            contador++
+        }
+
+        if(num3%2!=0){
+            contador++
+        }
+
+        if(num4%2!=0){
+            contador++
+        }
+
+        if(num5%2!=0){
+            contador++
+        }
+
+        if(num6%2!=0){
+            contador++
+        }
+
+        if(num7%2!=0){
+            contador++
+        }
+
+        if(num8%2!=0){
+            contador++
+        }
+
+        if(num9%2!=0){
+            contador++
+        }
+
+        if(num10%2!=0){
+            contador++
+        }
+
+        document.write("El señor ingreso : " +num1+ "," +num2+ "," +num3+ "," +num4+ "," +num5+ "," +num6+ "," 
+                       +num7+ "," +num8+ "," +num9+ "," +num10+ "<br>")
+            
+        document.write("de los cuales " +contador+ " fueron impares")
+
+
+
+    </script>
+    
+</body>
+</html>
