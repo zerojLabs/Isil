@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <h3>
+        INTRODUCCION A LA PROGRAMACION -  Evaluación Permanente 1 (Ejercicio 1)
+        <br><br>
+    </h3>
+    <h4>
+        1.	Realiza un script que le pida al usuario 10 números y el programa arroje cuantos números múltiplos de 3  ingresó el usuario 
+            y también muestre la suma de ellos. <br> Independiente a este dato, el programa también debe decir cuántos múltiplos de 5 ingreso y también la suma de ellos.<br><br>
+            Ejemplo: <br>
+            El señor ingresó 10 números : 2,6,8,7,4,1,9,10,23,25
+            2 fueron múltiplos de 3 y sumaron 15
+            2 fueron múltiplos de 5 y sumaron 35.
+            <br> <br><br>
+    </h4>
+</head>
+<body>
+    <script>
+
+        const numeros = []
+        const multiplos3 = []
+        const multiplos5 = []
+
+        let sum3 = 0; let sum5 = 0
+        let cant3 = 0; let cant5 = 0
+
+        for (let i = 0; i < 10; i++){
+            const n = parseFloat(prompt("Ingrese un numero"))
+            numeros.push(n)
+            //multiplos de 3 y demas operaciones
+            if(!isNaN(n)){
+                if(n % 3 === 0){
+                    multiplos3.push(n)
+                    sum3 = sum3 + n
+                    cant3 ++
+                } 
+            //multiplos de 5 y demas operaciones
+                if(n % 5 === 0){
+                    multiplos5.push(n)
+                    sum5 = sum5 + n
+                    cant5 ++
+                }
+            } else {
+                alert("Por favor ingrese un numero valido")
+                numeros.pop()
+                i --
+            }
+        } 
+
+        document.write("El señor ingreso los siguientes 10 numeros:  " + numeros + "<br><br>")
+        document.write(cant3 + "  fueron multiplos de 3  >> " + multiplos3 + "  y sumaron: " + sum3 + "<br>")
+        document.write(cant5 + "  fueron multiplos de 5  >>   " + multiplos5 + "  y sumaron: " + sum5 + "<br>")
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

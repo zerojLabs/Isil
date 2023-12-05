@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <h3>3.	Realiza un script que te pida un número y esta te imprima la serie Fibonacci hasta la cantidad de números ingresados (6 puntos).
+    Ejemplo.
+    Se ingresa; 10
+    Sale:
+    1,1,2,3,5,8,13,21,34,55</h3>
+</head>
+<body>
+
+    <script>
+
+    let numero = parseInt(prompt("cuantos numeros de la serie FideoNachi quieres ver"));
+    const cantidad = numero
+    let a = 1
+    let b = 1
+    let serie = numero
+
+    for(let x = 1; x<=cantidad; x++){
+        (x == 1) ? document.write(1,' , ') : null;
+        (x == 1) ? document.write(1,' , ') : null;
+        //inicio de sucesion fibonacci
+        serie = a + b;
+        document.write(serie, ' , ')
+        a = b
+        b = serie
+    }
+
+        document.write("\u221E")
+    
+    </script>
+
+    <!-- byZeroj -->
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+
+    <style>
+      .zero {
+    color: rgb(255, 255, 255);  /* Cambia 'red' al color que prefieras */
+    }
+    </style>
+
+</head>
+<body>
+
+    <h3>
+        4.	Desarrolle una aplicación que le pida al usuario un número y ud deberá hacer la siguiente matriz
+            Si ingresa 5 ud deberá armar lo siguiente:
+
+            1  1   1    3
+            2  3   9    14
+            3  6   36   45
+            4  10  100  114
+            5  15  225  245
+
+    </h3>
+
+    <script>
+
+      const texto1 = "123";
+      const texto2 = "954";
+      const texto3 = "6111";
+      const textoAlineado1 = texto1.padStart(5, '-');
+      const textoAlineado2 = texto2.padStart(5, '-');
+      const textoAlineado3 = texto3.padStart(5, '-');
+
+      document.write(textoAlineado1 + ' ' + textoAlineado1); // Salida: "00123"
+      document.write("<br>")
+      document.write(textoAlineado2 + ' ' + textoAlineado2)
+      document.write("<br>")
+      document.write(textoAlineado3 + ' ' + textoAlineado3)
+
+      window.onload = function() {
+    var body = document.body;
+    var html = body.innerHTML;
+    html = html.replace(/-/g, '<span class="zero">-</span>');
+    body.innerHTML = html;
+}
+
+
+
+    </script>
+    
+</body>
+</html>

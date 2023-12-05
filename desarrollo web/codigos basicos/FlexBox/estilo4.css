@@ -1,0 +1,21 @@
+.contenedor{
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+
+.pelicula{
+    background-color:lightskyblue ;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    flex-basis: 300px;
+    }
+
+#episodio4 {align-self: center;}
+#episodio5 {align-self: flex-start;}
+#episodio6 {align-self: flex-end;}

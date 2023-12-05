@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con botones</title>
+    <style>
+       
+        input:valid {
+            background-color: lightsteelblue;
+        }
+        input:invalid {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Datos Generales</h1>
+    <form name="formulario" method="get" action="">
+        <div>
+             Nombre  <input type="text" name="nombre" required placeholder="Ingrese su usuario" />
+        </div>
+        <div>
+             Edad  <input type="number" name="edad" value="18" min="18" max="55" step="1" required />
+        </div>
+        <div>
+            Correo <input type="email" name="correo" required placeholder="Ingrese su correo" />
+        </div>
+        <div>
+            Celular <input type="tel" minlength="9" placeholder="Ingrese su celular" />
+        </div>
+        <div>
+            <input type="submit" name="enviar" value="Enviar" />
+            <input type="reset" name="limpiar" value="Limpiar" />
+        </div>
+    </form>
+</body>
+
+</html>

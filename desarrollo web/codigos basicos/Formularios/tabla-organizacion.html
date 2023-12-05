@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Organizada</title>
+    <style>
+        table {
+            border: 1px solid #cccccc;
+            width: 40%;
+            border-collapse: collapse;
+        }
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            font-weight: bold;
+        }
+        th {
+            background-color: lightblue;
+        }
+        td {
+            border: 1px solid lightslategrey;
+        }
+        tfoot {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Star Wars</caption>
+        <thead>
+            <tr>
+                <th>Trilogía</th>
+                <th>Titulo</th>
+                <th>Año de Estreno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Original</td>
+                <td>Episodio IV: Una Nueva Esperanza</td>
+                <td>1977</td>
+            </tr>
+            <tr>
+                <td>Episodio V: El Imperio Contraataca</td>
+                <td>1980</td>
+            </tr>
+            <tr>
+                <td>Episodio VI: El Retorno del Jedi</td>
+                <td>1983</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Star Wars : Autor original George Lucas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

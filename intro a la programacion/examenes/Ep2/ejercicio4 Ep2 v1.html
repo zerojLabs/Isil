@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+
+    <!-- 4.	Realiza un script que te muestre un cuadrado de lado dado por el usuario pero los dos extremos de cada lado
+        Ejemplo: SI le pones 7
+        1111111
+        122221
+        12     21
+        12     21
+        12     21
+        122221
+        1111111 -->
+</head>
+<body>
+    <script>
+
+    //Explicacion de mi codigo antes que me olvide que escribi por el sueño 03.10am...
+
+    //El cuadrado consta de 3 partes:
+    //Primero se llenan las primeras 2 filas y 2 ultimas filas
+    //Segundo se insertan las columnas extremas del centro con dobles **
+    //Tercero se insertan los espacios en blanco calculados en base al largo del lado...
+
+    //4to no se porque estoy que escribo todo esto al final solo es mi delirio de retarme a mi mismo :v
+
+
+     const lado = parseInt(prompt("Ingrese el lado de un cuadrado"));
+     const simbolo = (prompt("Ingrese cualquier simbolo, caracter o lo que sea para crear el cuadrado"));
+
+     // NOTA : no todos los caracteres salen en un perfecto cuadrado, 
+     // letras como la W , M y otros carcateres fallan en el alineamiento
+
+    //  Cantidad de espacio a generar es en base a nbsp (medio espacio)
+    //  Por ende se debe duplicar si el lado es 5 , corresponde a 10 espacios necesarios...
+    //  Restarle -8 espacios no estoy seguro realmente porque ese numero pero en base a pruebas
+    //  8 era la cantidad necesaria para alinear las ultimas 2 columnas 
+    //  calculo que se debe que son 2 columnas de 2 caracteres derecha e izquierda extremos, 
+    //  un total de 4 columnas en base a los espacios de nbsp * 2 = 8 , sigo sin estar seguro si se debe a eso ese calculo...
+      let nEspacios = (lado *2)-8
+
+        for (let x = 1; x <= lado; x++){
+            for(let y = 1; y <= lado; y++){
+
+                //Primera condicion que llena las 2 primeras filas y las 2 ultimas
+                ((x <= 2) || (x == lado || x == lado-1)) ? document.write(simbolo): null;
+
+                //Segunda condicion que inserta las demas columnas extremas del centro
+                if((x>2) && (x<lado -1) )
+                {   
+                    (y<=2 && y < lado-1) ? document.write(simbolo+simbolo) : null; //insercion de columnas
+                    document.write("&nbsp;".repeat(nEspacios))          //Insercion de los espacios calculados
+                }
+            }
+            document.write("<br>")
+        }
+
+
+    </script>
+    <!-- byZeroj -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4 Parcial</title>
+</head>
+
+<style>
+    .espacioFalso{
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  }
+  </style>
+
+<body>
+    <h3>
+        4.	Desarrolle una aplicación que le pida al usuario un número y ud deberá hacer la siguiente matriz
+            Si ingresa 5 ud deberá armar lo siguiente:
+
+            <!-- 1  1   1    3
+            2  3   9    14
+            3  6   36   45
+            4  10  100  114
+            5  15  225  245 -->
+
+    </h3>
+
+    <script>
+
+        let num = parseInt(prompt("Ingresa un numero")) 
+
+        let a = 0;
+        let b = 0;
+        let c = 0;
+        let d = 0;
+        let f2 = 1;
+
+        let matriz = [[1, 1, 1, 3]];
+
+        for(let x=1; x<=num-1; x++){
+                if(x<=num){
+                    a = x +1
+                    b = a +f2
+                    c = b * b
+                    d = a + b + c
+                    matriz.push([a, b, c, d])
+                }
+                    f2 = b
+                    a = 0;
+                    b = 0;
+                    c = 0;
+                    d = 0;
+            }   
+
+        // Encuentra la longitud maxima de los numros en la matriz
+          const nDigitos = Math.max(
+          ...matriz
+            //flatMap convierte la matriz a una unidimensiaonal o recta o plana o que lo k sea...
+            //para poder trabajar con todos sus elementos en lugar de matrices anidades 
+              .flatMap(row => row)
+              //map, aplica a cada elemento ..
+              //las demas funciones de conversion de string y verificacion del largo 
+              .map(num => num.toString().length)
+          );
+
+
+
+          //_------------------------------------------------------------------------------------
+         // Imprime la matriz alineando los números
+          matriz.forEach(filas => {
+            //conversion a string
+            //aplicacion del padStar con un guion en el parametro como espacio falso
+            //reemplazo de las comas con join..
+              const matrix = filas.map(num => num.toString().padStart(nDigitos + 1, '_')).join(' ');
+              document.write(matrix + "<br>");
+          });
+          //_------------------------------------------------------------------------------------
+
+
+
+          function killer(texto) {
+                  document.write(texto);
+          }
+
+          //Evento que se activa cuando todos los elmentos ya se cargaron..
+          window.onload = function() {
+            //Referencia al elemento body
+            var body = document.body;
+            //Captura o guarda todo el contenido de la pagina..
+            var html = body.innerHTML;
+            //replace busca todos los guiones y los envuelve en un spom con la clase espacioFalso
+            html = html.replace(/_/g, '<span class="espacioFalso">_</span>');
+            //establece el contenido del body con el nuevo contenido modificado con spam..
+            body.innerHTML = html;
+        }
+
+        
+    </script>
+    <!-- byZeroj -->
+</body>
+</html>

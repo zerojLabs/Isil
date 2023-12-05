@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con archivos</title>
+   
+</head>
+
+<body>
+    <h1>Datos Generales</h1>
+    <form name="formulario" method="post" enctype="multipart/form-data" action="">
+        <div>
+            Archivo <input type="file" name="archivo" accept=".pdf,.docx,.doc,.txt" />
+        </div>
+        <div>
+            <input type="submit" name="enviar" value="Enviar" />
+            <input type="reset" name="limpiar" value="Limpiar" />
+        </div>
+    </form>
+</body>
+
+</html>

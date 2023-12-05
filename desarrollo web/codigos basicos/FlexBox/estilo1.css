@@ -1,0 +1,13 @@
+.contenedor{
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pelicula{
+    background-color:lightskyblue ;
+    margin: 5px;
+    padding: 5px;
+
+}

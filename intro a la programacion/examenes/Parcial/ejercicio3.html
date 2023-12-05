@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 Parcial</title>
+
+    <h4> 
+        3.	Desarrolle una aplicación que le pida al usuario un nombre  y ud deberá construir el nombre en forma de pirámide descendente  con el nombre en sentido contrario
+            Si ingresa Alfredo deberá salir
+    </h4>     
+
+    <style>
+
+    #estiloScripts{
+        font-family: monospace;
+        font-size: 28px;
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <main id="estiloScripts">
+        <script >
+            
+            let nombre = prompt("Ingresa un nombre").toUpperCase()
+            let n = alReves(nombre) //aplicacion de la funcion 
+
+            //bucle que elimina los primeros caracteres con slice
+            for(let x = 0; x < nombre.length; x++){
+                if(x==0){
+                killer(n.slice(x) + "<br>")
+                } else {
+                    killer("&nbsp".repeat(x) + n.slice(x) + "<br>")
+                    }
+            } 
+
+            //_---------------------------------------------------------
+            // FUNCION QUE INVIERTE TEXTO
+            function alReves(nombre){
+                let nuevaCad = "";
+
+                for(let i = nombre.length - 1; i>=0; i--){
+                    nuevaCad += nombre[i];
+                }
+                return nuevaCad
+            } 
+            //----------------------------------------------------------
+            function killer(texto) {
+                document.write(texto)
+            }
+            //--------------------------------------------------------- 
+        </script> 
+    </main>
+    
+    <!-- byZeroj -->
+ </body>
+</html>

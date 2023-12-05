@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Parcial</title>
+
+    <h4> 
+        1.	Realiza un script que le pida un numero de 5 cifras, sea múltiplo
+           de 5 y a la vez de 7. Mostrar el siguiente mensaje:
+           Felicidades, UD.ingresó el número “XX”
+           Este número es múltiplo de 7 con DD
+           También es múltiplo de 5 con SS
+           Siendo XX el numero que ingreso el usuario, 
+           DD el número que multiplicado por 7 da el número que ingresó el usuario, 
+           y  SS el número que multiplicado por 5  da el número que ingresó el usuario
+    </h4>
+</head>
+
+<body>
+    <script>
+        
+        
+        let a = true
+        let dd = 0
+        let ss = 0
+        
+        while(a){
+           let num = prompt("Ingresa un numero ...");   
+            
+          if ((num > 9999 && num < 99999) && (num % 5 ==0 && num % 7 == 0)){
+               a = false;
+               dd = num / 7;
+               ss = num / 5;
+               
+               killer(">Felicidades, UD.ingreso el numero " + num +"<br>");
+               killer(">Este numero es múltiplo 7 con "+ dd + "<br>");
+               killer(">Este numero es múltiplo 5 con "+ ss + "<br>");
+               killer(">Eres un crack "+ "😉")
+            } else {
+                a = true;
+                }
+        }
+           
+        
+        function killer(texto) {
+            document.write(texto)
+        }
+        
+    </script>
+    <!-- byZeroj -->
+</body>
+</html>

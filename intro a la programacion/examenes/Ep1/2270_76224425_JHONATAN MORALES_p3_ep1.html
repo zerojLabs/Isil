@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <h3>
+        INTRODUCCION A LA PROGRAMACION -  Evaluación Permanente 1 (Ejercicio 3)
+        <br><br>
+    </h3>
+    <h4>
+        3.	Desarrolle una aplicación que te pregunte  que día de la semana es, Ya sea con numero o con letras, y dependiendo del día muestre el menú de esta manera. <br><br>
+        Ejemplo1. Si el usuario escribe “Lunes” o “1”
+        
+        Felicidades---------->>> Hoy es lunes, el plato de hoy será Arroz con pollo. <br>
+        Ejemplo2. Si el usuario escribe “Martes” o “2” <br>
+        
+        Felicidades---------->>> Hoy es Martes, el plato de hoy será Lentejas. <br><br><br>
+    </h4>
+</head>
+<body>
+    <script>
+
+        const dia = prompt("Ingrese el dia de semana para ver la especialidad del chef").toUpperCase()
+
+        switch(dia){
+            case "LUNES":
+            case "1":
+                mensaje = "Felicidades -------> Hoy Lunes, el plato sera Arroz con pollo"
+                break;
+            case "MARTES":
+            case "2":
+                mensaje = "Felicidades -------> Hoy Martes, el plato sera Tallarines verdes"
+                break
+            case "MIERCOLES":
+            case "3":
+                mensaje = "Felicidades -------> Hoy Miercoles, el plato sera Carapulcra de chancho"
+                break
+            case "JUEVES":
+            case "4":
+                mensaje = "Felicidades -------> Hoy Jueves, el plato sera Parihuela"
+                break
+            case "VIERNES":
+            case "5":
+                mensaje = "Felicidades -------> Hoy Viernes, el plato sera Arroz a la cubana"
+                break
+            case "SABADO":
+            case "6":
+                mensaje = "Felicidades -------> Hoy Sabado, el plato sera Aji de gallina"
+                break
+            case "DOMINGO":
+            case "7":
+                mensaje = "Felicidades -------> Hoy Domingo, el plato sera Seco de pollo"
+                break
+            default:
+            document.write("No ingreso un dia valido, vuelva a intentarlo")
+        }
+
+        document.write( mensaje)
+
+
+
+
+    </script>
+</body>
+</html>

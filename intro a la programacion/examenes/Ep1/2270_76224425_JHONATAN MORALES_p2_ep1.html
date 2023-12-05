@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title> 
+    <h3>
+        INTRODUCCION A LA PROGRAMACION -  Evaluación Permanente 1 (Ejercicio 2)
+        <br><br>
+    </h3>
+    <h4>
+        2.	Desarrolle un Script que le pida al usuario el nombre de un empleado, la edad, la profesión, el distrito donde vive y cuantas horas trabajo el ultimo mes. <br>Suponiendo que el empleado tiene un sueldo base de:2000br <br><br>
+            Calcule su boleta de pago si: <br><br>
+            •	La boleta debe salir con los nombres en mayúsculas (Así sean ingresados en minúsculas) <br>
+            •	Si el empleado tiene más de 40 gana un bono adicional del 500 <br>
+            •	Si el empleado es de SISTEMAS gana un bono de 500, INGENIERO 400, DISEÑADOR 300, otra profesión no tiene ni un bono. <br>
+            •	Si vive en BREÑA,  las horas valen 50 nuevos soles, si vive en LINCE gana 40 nuevos soles por hora, cualquier otro distrito gana 100 nuevos soles la hora. <br><br><br>
+    </h4>
+
+</head>
+<body>
+    
+    <script>
+
+        let empleado, edad, profesion, distrito, horasTrabajo, sueldoHora, sueldoFinal, bonoEdad, bonoProfesion, mensaje ;
+        const sueldoBase = 2000
+
+        alert("Para cobrar su millonario salario ingrese sus datos")
+        empleado = prompt("Nombre de empleado").toUpperCase()
+        edad = parseInt(prompt("Su edad"))
+        profesion = prompt("Su profesion").toUpperCase()
+        distrito = prompt("Distrito de residencia").toUpperCase()
+        horasTrabajo = parseFloat(prompt("Horas trabajadas durante el mes"))
+
+        sueldoHora = 0
+        bonoEdad = 0
+        bonoProfesion = 0
+
+        if(edad > 40){
+            bonoEdad = 500
+        }
+
+        switch(profesion){
+            case "SISTEMAS":
+                bonoProfesion = 500
+                mensaje = ""
+                break;
+            case "INGENIERO":
+                bonoProfesion = 400
+                mensaje = ""
+                break;
+            case "DISEÑADOR":
+                bonoProfesion = 300
+                mensaje = ""
+                break;
+            default:
+                mensaje = " , Sorry no tienes bono, quien te mando a dedicarte a eso :D"
+                break;
+        }
+
+        switch(distrito){
+            case "BREÑA":
+                sueldoHora = 50
+                break;
+            case "LINCE":
+                sueldoHora = 50
+                break;
+            default:
+                sueldoHora = 100
+                break;
+        }
+
+
+        sueldoFinal = sueldoBase + bonoEdad + bonoProfesion + (horasTrabajo * sueldoHora)
+
+        document.write("DATOS DE SUELDO" + "<br>" + "---------------------------" + "<br><br>")
+        document.write("Nombre            :  " + empleado + "<br>")
+        document.write("Edad              :  " + edad + "<br>")
+        document.write("Profesion         :  " + profesion + "<br>")
+        document.write("Distrito          :  " + distrito + "<br><br>")
+
+        document.write("En base a los respectivos datos proporcionados..." + "<br><br>")
+        document.write("Sueldo base:  2000" + "<br>")
+        document.write("Bono por edad:  " + bonoEdad + "<br>")
+        document.write("Bono por profesion:  " + bonoProfesion + mensaje + "<br>")
+        document.write("Sueldo por horas:  " + sueldoHora + " por total de horas " + horasTrabajo + ": " + horasTrabajo * sueldoHora +"<br><br>")
+        document.write("Su sueldo correspondiente de este mes es: " + sueldoFinal)
+
+
+    </script>
+</body>
+</html>

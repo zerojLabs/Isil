@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    <!-- 1.	Realiza un script que te pida una cadena de texto, 
+    y que solo te imprima como salida las vocales que hay en el, a manera de resumen. -->
+
+</head>
+<body>
+
+    <h3>
+        <p>1.Realiza un script que te pida una cadena de texto, </p>
+        <p>y que solo te imprima como salida las vocales que hay en el, a manera de resumen.</p>
+    </h3>
+    
+        <script>
+
+            const texto = prompt("Ingresa un texto");
+            let a = 0;
+            let e = 0;
+            let i = 0;
+            let o = 0;
+            let u = 0;
+
+            for(let c = 0; c <= texto.length; c++){
+
+                (texto.charAt(c) == "a") ? a ++: null ;
+                (texto.charAt(c) == "e") ? e ++: null ;
+                (texto.charAt(c) == "i") ? i ++: null ;
+                (texto.charAt(c) == "o") ? o ++: null ;
+                (texto.charAt(c) == "u") ? u ++: null ;
+            }
+                document.write("de la vocal a hay >> ", a, "<br>")
+                document.write("de la vocal e hay >> ", e, "<br>")
+                document.write("de la vocal i hay >> ", i, "<br>")
+                document.write("de la vocal o hay >> ", o, "<br>")
+                document.write("de la vocal u hay >> ", u, "<br>")
+
+        </script>
+    
+        <!-- byZeroj -->
+</body>
+</html>

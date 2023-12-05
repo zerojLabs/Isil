@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+
+    <h3> 4.	Realiza un script que te muestre un cuadrado de lado dado por el usuario pero los dos extremos de cada lado
+        </h3>
+</head>
+<body>
+    <script>
+
+    //Explicacion de mi codigo antes que me olvide que escribi por el sueño 03.10am...
+
+    //El cuadrado consta de 3 partes:
+    //Primero se llenan las primeras 2 filas y 2 ultimas filas
+    //Segundo se insertan las columnas extremas del centro
+    //Tercero se insertan los espacios en blanco calculados en base al largo del lado...
+    //4to no se porque estoy que escribo todo esto al final solo es mi delirio de retarme a mi mismo :v
+    let ojoEh = "👁️"
+
+     const lado = parseInt(prompt("Ingrese el lado de un cuadrado, en formato de numero solo para aclarar.. " + ojoEh));
+     const a = prompt("Ingrese cualquier simbolo, caracter o lo que sea para crear el cuadrado, pero solo 1 ehh... " + ojoEh);
+     const b = prompt("Ingrese cualquier simbolo, caracter o lo que sea para crear el cuadrado");
+
+      let nEspacios = (lado *2)-8
+
+        for (let x = 1; x <= lado; x++){
+            for(let y = 1; y <= lado; y++){
+
+                //Primera condicion que llena las 2 primeras filas y las 2 ultimas
+                ((x == 1) || (x == lado) ) ? killer(a): null; //primera y ultima fila
+                (((x == 2) && (y == 1 || y == lado)) || (x==lado-1 && (y==1 || y ==lado))) ? killer(a): null;
+                (((x == 2 && (y==2 || y<=lado -2)) || (x == lado-1 &&(y ==2 || y <= lado-2))) ) ? killer(b): null; //segunda y pennultima fila
+
+
+                //Segunda condicion que inserta las columnas extremas del centro
+                if((x>2) && (x<lado -1) )
+                {   
+                    (y==1 && y < lado) ? killer(a+b) : null; //insercion de primeras 2 columnas
+                    (y==2 && y < lado-1) ? killer(b+a) : null; //insercion de ultimas 2 columnas
+                    killer("&nbsp;".repeat(nEspacios)) //Insercion de los espacios calculados
+                }
+            }
+            document.write("<br>")
+        }
+
+        //asesino del aburrido document.write
+        function killer(texto) {
+            document.write(texto)
+        }
+
+    </script>
+    <!-- byZeroj -->
+</body>
+</html>

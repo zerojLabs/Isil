@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+
+    <!-- 4.	Realiza un script que te muestre un cuadrado de lado dado por el usuario pero los dos extremos de cada lado
+        Ejemplo: SI le pones 7
+        1111111
+        122221
+        12     21
+        12     21
+        12     21
+        122221
+        1111111 -->
+</head>
+<body>
+    <script>
+
+     let lado = parseInt(prompt("Ingrese el lado de un cuadrado"));
+     let nEspacios = (lado *2)-8
+
+        for (let x = 1; x <= lado; x++){
+            for(let y = 1; y <= lado; y++){
+                if((x <= 2) || (x == lado || x == lado-1)){
+                    document.write("*")
+                } else{
+                    document.write("")
+                 }
+
+                 if((x>2) && (x<lado -1) ){
+                    if(y<=2 && y < lado-1){
+                        document.write("**")
+                    }  
+                    document.write("&nbsp;".repeat(nEspacios))
+                }
+            }
+            document.write("<br>")
+        }
+        
+            
+    </script>
+    <!-- byZeroj -->
+</body>
+</html>

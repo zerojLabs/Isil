@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Fecha y Hora</title>
+    
+</head>
+
+<body>
+    <h1>Datos Generales</h1>
+    <form name="formulario" method="get">
+        <div>
+            Fecha <input type="date" name="fecha" min="2021-08-01" max="2021-12-31" step="2" />
+        </div>
+        <div>
+            Hora <input type="time" name="Hora" min="09:00" max="20:00" step="3600" />
+        </div>
+        <div>
+            Fecha y hora local <input type="datetime-local" name="fechor" />
+        </div>
+        <div>
+            Mes <input type="month" name="mes" />
+        </div>
+        <div>
+            Semana <input type="week" name="semana" />
+        </div>
+       
+    </form>
+</body>
+
+</html>

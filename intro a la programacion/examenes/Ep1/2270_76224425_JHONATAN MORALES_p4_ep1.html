@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+
+    <h3>
+        INTRODUCCION A LA PROGRAMACION -  Evaluación Permanente 1 (Ejercicio 4)
+        <br><br>
+    </h3>
+    <h4>
+        4.	Desarrolle una aplicación que te le pida al usuario ingresar 4 números, y el sistema debe decir cúal número es el mayor y cuál es el menor. <br><br>
+            Ejemplo: Si usuario ingresa 1,4,6,9
+
+            El sistema te dirá: <br>
+            El 9 es el mayor <br>
+            El 1 es el menor <br><br><br>
+    </h4>
+</head>
+<body>
+
+    <script>
+
+        const numeros = []
+        let numeroMayor, numeroMenor;
+
+        for(let i = 0; i < 4; i++){
+            const n = parseFloat(prompt("Ingrese un numero"))
+            numeros.push(n)
+            if(!isNaN(n)){
+                numeroMayor = Math.max(...numeros)
+                numeroMenor = Math.min(...numeros)
+            } else {
+                alert("Por favor ingrese un numero valido")
+                numeros.pop()
+                i --
+            }
+        }
+
+        
+
+        document.write("El numero mayor es: " + numeroMayor + "<br>")
+        document.write("El numero menor es: " + numeroMenor)
+
+    </script>
+</body>
+</html>

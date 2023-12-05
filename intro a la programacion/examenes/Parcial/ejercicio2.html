@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2 Parcial</title>
+    <h3>
+        2.	Desarrolle un Script que te muestre todos los resultados posibles tirando 3 dados hasta obtener 3 ases (1-1-1)
+    </h3>
+</head>
+<body>
+    
+    <p>
+        <Strong>Presione para volver a tirar los dados.</Strong>
+        <br><br><br>
+        <button id="dado">Lanzar los dados</button><br><br>
+    </p>
+
+    <script>
+
+
+        lanzardados()
+        insertarBoton()
+
+        //funcion que crea un boton para lanzar los dados
+        function insertarBoton(){
+            const boton = document.getElementById("dado");
+            boton.addEventListener("click", () => {
+            window.location.reload(); //refresca la pagina
+            });
+        }
+
+
+        function lanzardados(){
+            let z = true;
+            let intentos = 0;
+                while(z){
+                    let dado1 = parseInt(Math.random()*6+1);
+                    let dado2 = parseInt(Math.random()*6+1);
+                    let dado3 = parseInt(Math.random()*6+1);
+                    intentos ++;
+
+                    //interpolacion de strings.....
+                    //Se usan comillas simples inversas... alt +96
+                    killer(`> Intento numero ${intentos} ------> ${dado1} - ${dado2} - ${dado3} ` + "<br>");   
+                        if(dado1 ==1 && dado2==1 && dado3 ==1){
+                            z = false;
+                        }
+                }
+        }
+
+
+        function killer(texto) {
+                document.write(texto);
+            }
+    </script>
+    <!-- byZeroj -->
+</body>
+</html>

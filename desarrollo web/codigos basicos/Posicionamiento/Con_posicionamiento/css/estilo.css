@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#cabecera {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid gray;
+    /* Estilos para presentación */
+    /*border-top: 1px solid gray;
+    background-color: #DDB151;*/
+    /* Posicionamiento */
+    /*position: sticky;
+    top: 5px;
+    z-index: 100;*/
+}
+
+   
+#titulo {
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 5px;
+    height: 100%;
+    font-family: Helvetica;
+    font-style: italic;
+    text-transform: uppercase;
+}
+#titulo h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#titulo h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#menu {
+    flex-grow: 1;
+    flex-basis: 50%;
+    align-items: center;
+}
+#menu > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 10pt;
+    height: 100%;
+}
+#menu a {
+    color: darkslategrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+#menu a:hover {
+    background-color: dimgrey;
+    color: white;
+    transition-property: color, background-color;
+    transition-duration: 300ms, 400ms;
+    transition-timing-function: ease-in, ease-out;
+}
+
+#contenedor {
+    width: 90%;
+    margin: 5px;
+    border: 1px solid gray;
+}
+#contenido {
+    scroll-behavior: smooth;
+}
+
+/*#logo {
+    width: 40%;
+    position: fixed;
+    top: calc(100px + 5%);
+    left: 50%;
+}*/
+
+#logo img {
+    width: 200px;
+    height: 91px;
+    margin: 20px;
+}
+#seccion {
+    width: 100%;
+
+}
+#seccion .articulo h3 {
+    margin-left: 10px;
+    text-decoration: underline;
+}
