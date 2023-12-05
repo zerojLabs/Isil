@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3>Desarrollar una app que le pida al jugador scar 5 cartas (cualquier simbolo espadas,corazon, oro y trebol) si obtienes 4 cartas del mismo color
+      ganas 5 mil dolares, participar en el juego cuesta 500 dolres y tienes
+      10 intentos
+   </h3>
+      
+    <script>  
+    var numero,simbolo,figura,contadore,contadort,contadorc,contadoro,mensaje
+    contadore=0
+    contadort=0
+    contadorc=0
+    contadoro=0
+    mensaje=""
+    for(var x=1;x<=10;x++){
+      document.write("Juego :"+x+"<br>")
+      for(var j=1;j<=5;j++){
+         numero=parseInt(Math.random()*13+1)
+         simbolo=parseInt(Math.random()*4+1)
+         switch(simbolo){
+            case 1:
+               figura="♠";
+               contadore++;
+               break;
+            case 2:
+               figura="♣";
+               contadort++;
+               break;
+            case 3:
+               figura="♦";
+               contadoro++;
+               break;
+            default:
+               figura="♥";
+               contadorc++;
+         }
+         if(contadore>=4){
+            mensaje="Obtuvo 4 veces la figura ♠"
+         }
+         if(contadort>=4){
+            mensaje="Obtuvo 4 veces la figura ♣"
+         }
+         if(contadoro>=4){
+            mensaje="Obtuvo 4 veces la figura ♦"
+         }
+         if(contadorc>=4){
+            mensaje="Obtuvo 4 veces la figura ♥"
+         }
+         document.write( figura+" "+numero+"-")   
+      }
+       document.write(mensaje)
+       contadore=0
+       contadoro=0
+       contadorc=0
+       contadort=0
+       mensaje=""
+       document.write("<br>") 
+
+    }
+
+
+    
+    </script>
+</body>
+</html>

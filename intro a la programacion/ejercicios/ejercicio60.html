@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+</head>
+<body>
+   <h3>Crear una funcion que te devuelva el area de un triangulo donde el alto y la base es ingresado
+       por el usuario
+       </h3>
+      
+    <script>
+      var alto,base,area
+
+      alto=parseInt(prompt("ingrese el alto del triangulo"))
+      base=parseInt(prompt("ingrese la base del triangulo"))
+      area=areat(alto,base)
+      document.write("Ud ingresó el alto:"+alto+" y la base: "+base+"<br>")
+      document.write("y el area del triangulo es:"+area)
+
+      function areat(altot,baset){
+          return(altot*baset/2)
+      }
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+       span{
+         color:red;
+       }
+    </style>
+</head>
+<body>
+   <h3>Desarrollar una app que le pida al jugador sacar 5 cartas hasta sacar 
+       cartas del mismo numero
+     
+   </h3>
+      
+   <script>  
+   var numero,simbolo,nsimbolo,carta,arreglo=[],arreglo1=[],contador,carta1,carta2,carta3,carta4,carta5
+   
+   carta1=""
+   carta2=""
+   carta3=""
+   carta4=""
+   carta5=""
+   let llave2=true
+   contador=0 
+
+   while(llave2){
+      for(var x=1;x<=5;x++){
+         carta=mostrarcarta()
+      }
+      arreglo.sort()
+      //document.write(arreglo+"<br>")
+      carta1=arreglo[0][0]
+      carta2=arreglo[1][0]
+      carta3=arreglo[2][0]
+      carta4=arreglo[3][0]
+      carta5=arreglo[4][0]
+      //document.write(carta1,carta2,carta3,carta4,carta5) 
+      
+       
+      if(carta1==carta2){
+         if ((carta2==carta3)&&(carta3==carta4)){
+            llave2=false
+         }
+      }else{
+         if ((carta2==carta3)&&(carta3==carta4)&&
+             (carta4==carta5)){
+            llave2=false
+         }
+      }
+ 
+      document.write(arreglo+"<br>")
+      arreglo=[]
+      arreglo1=[]
+
+
+   }
+  
+   
+
+   
+
+   function mostrarcarta(){
+      let llave=true
+      while(llave){
+         numero=parseInt(Math.random()*13+1)
+         nsimbolo=parseInt(Math.random()*4+1)
+         switch(nsimbolo){
+            case 1:
+               simbolo="♠"
+               break;
+            case 2:
+               simbolo="♣"
+               break;
+            case 3:
+               simbolo="<span>♦</span>"
+               break;
+            default:
+               simbolo="<span>♥</span>"
+         }
+         if(arreglo1.includes(numero+simbolo)){
+            llave=true
+         }else{
+            llave=false
+         } 
+      }
+     
+      arreglo1.push(numero+simbolo)
+      arreglo.push([numero,simbolo])
+      return (numero+simbolo)
+   }
+   
+
+    
+
+    
+    </script>
+</body>
+</html>
