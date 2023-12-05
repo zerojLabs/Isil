@@ -1,0 +1,58 @@
+
+body {
+    background: linear-gradient(to right, #e4c8c8, #9ad9e9);
+    
+}
+
+header{
+    text-align: center;
+    color: rgba(119, 14, 14,);
+}
+
+main{
+    display: grid;
+
+    grid-template-areas: 
+        "datos descripcion"
+        "contenido contenido";
+    
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.datos{
+    grid-area: datos;
+    margin-left: 25px;
+    padding: 10px 10px 0 5px;
+   
+}
+
+.descripcion {
+    grid-area: descripcion;
+    margin: 15px 50px 0 0;
+    padding-left: 30px;
+  }   
+  
+.contenido {
+    grid-area: contenido;
+    margin: 30px 50px 0 0;
+    padding: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  }
+
+.contenido-libro{
+    margin: 50px 0 0 0;
+    padding-left: 30px;
+}
+
+
+/* numero de columnas
+espaciado entre columnas
+linea divisora de columnas visible */
+.contenido {
+    column-count: 3; 
+    column-gap: 2em;
+    column-rule: 1px solid rgb(148, 123, 11);
+}

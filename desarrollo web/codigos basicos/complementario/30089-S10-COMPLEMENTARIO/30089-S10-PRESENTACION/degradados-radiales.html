@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Degradados Radiales</title>
+    <style>
+        div {
+            border: 1px solid black;
+            margin: 5px;
+            height: 100px;
+            width: 400px;
+            text-align: center;
+        }
+        #div1 {
+            background: radial-gradient(blue, white);
+        }
+        #div2 {
+            background: radial-gradient(circle, green, white);
+        }
+        #div3 {
+            background: radial-gradient(circle 50px, red, white);
+        }
+        #div4 {
+            background: radial-gradient(circle 100px, blue, #00ffea, white);
+        }
+        #div5 {
+            background: radial-gradient(circle 100px, red 25%, #ff5100 50%, #fbff00 75%, white 100%);
+        }
+        #div6 {
+            background: radial-gradient(circle farthest-corner, blue 25%, #00ffea 75%, white);
+        }
+        #div7 {
+            background: radial-gradient(circle 200px at right, blue 25%, #00ffea 75%, white);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Degradado básico</div>
+    <div id="div2">Degradado básico con forma circular</div>
+    <div id="div3">Degradado de 50 pixeles</div>
+    <div id="div4">Degradado de tres colores</div>
+    <div id="div5">Degradado con color stops</div>
+    <div id="div6">Tamaño: farthest-corner</div>
+    <div id="div7">Dirección: right</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <style>
+        img {
+            width: 640px;
+            height: 427px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Películas y Series</h1>
+    <img src="img/peliculas-series.jpg" alt="Películas y series"
+         usemap="#movies" />
+    <map name="movies">
+        <area shape="rect" coords="105,193,168,281" 
+              href="https://dark.netflix.io/es" alt="serie Dark"
+              target="_blank" />
+        <area shape="rect" coords="362,193,422,281"
+              href="https://www.warnerbros.com/tv/friends" alt="serie Friends"
+              target="_blank" />
+        <area shape="circle" coords="527,298,32" 
+              href="https://netflix.com" alt="Ir a Netflix"
+              target="_blank" />
+    </map>
+</body>
+</html>
