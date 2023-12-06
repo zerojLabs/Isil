@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body>
+    
+    <header>
+        <div class="tituloGeneral">
+            <h1>Curso de Diseño y Desarrollo Web</h1>
+        </div>
+    </header>
+
+    <main>
+        <form action="formulario" method="get">
+            <fieldset>
+                <h2>Examen N°3</h2>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                     <div>  
+                        <label class="nombres" for="nombres">Ingrese su nombre completo :  </label>
+                        <input class="cuadro" classid="cuadronombres" type="text" id="nombres" name="nombreUsuario" required placeholder="nombres y apellidos">
+                    </div> 
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Lea con atencion y responda las siguientes preguntas</legend>
+
+                    <ol>
+                        <li class="preguntas">
+                            <label for="pregunta1">¿Que significa el acrononimo HTML?</label>
+
+                            <select id="pregunta1" name="signficado">
+                                <option value="opcion1">HyperText Markup Language</option>
+                                <option value="opcion2">HyperText Protocol</option>
+                                <option value="opcion3">HyperLinks Markup</option>
+                            </select>
+                        </li>
+
+                        <li class="preguntas">
+                            <label for="pregunta2">Elige la opcion verdadera</label>
+
+                            <label>
+                                <input type="radio" name="verdadero" value="mayusuculas" >
+                                Las etiquetas se pueden escribir en mayusuculas
+                                <br>
+                            </label>
+                                
+                            <label>
+                                <input type="radio" name="verdadero" value="sin_cierre" >
+                                Las etiquetas tienen instruccion de apertura pero no de cierre
+                                <br>   
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="verdadero" value="descontinuado">
+                                Su uso esta descontinuado
+                                <br>
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="verdadero" value="ninguna" >
+                                Ninguna es cierta
+                            </label>
+                        </li>
+
+                        <li class="preguntas">
+                         <label for="pregunta3">Seleccione los llamados selectores</label>
+                            <span>
+                                <label>
+                                    <input class="checkcuadros" type="checkbox" name="selectores" value="strong" >strong  
+                                </label>
+
+                                <label>
+                                    <input class="checkcuadros"  type="checkbox" name="selectores" value="header" >header
+                                </label>
+
+                                <label>
+                                    <input  class="checkcuadros" type="checkbox" name="selectores" value="em" >em
+                                </label>
+
+                                <label>
+                                    <input  class="checkcuadros" type="checkbox" name="selectores" value="cite" >cite
+                                </label>
+                                
+                                <label>
+                                <input  class="checkcuadros" type="checkbox" name="selectores" value="h1" >h1 - p
+                                <br>
+                                </label>
+                            </span>
+                        </li>
+
+                        <li class="preguntas">
+                            <label for="pregunta4">¿Que version de HTML soporta la etiqueta audio?</label>
+
+                            <label>
+                                <input type="radio" name="version" value="HTML4">HTLM4
+                                <br>
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="version" value="HTML3" >De HTML 3.2 en adelante
+                                <br>
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="version" value="HTML5" >HTML5
+                                <br>
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="version" value="Todas" >Todas las versiones de HTML
+                                <br>
+                            </label>
+                            
+                        </li>
+                        
+                        <li class="preguntas">
+                            <label for="pregunta5">Seleccione los dominios existentes</label>
+                            <span>
+                                <label>
+                                    <input type="checkbox" name="dominios" value="html" >.html
+                                </label>
+                                
+                                <label>
+                                    <input type="checkbox" name="dominios" value="com" >.com
+                                </label>
+                                
+                                <label>
+                                <input type="checkbox" name="dominios" value="info" >.info
+                                </label>
+
+                                <label>
+                                <input type="checkbox" name="dominios" value="xls" >.xls
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="dominios" value="org" >.org
+                                </label>
+                            </span>
+                        </li>
+                    </ol>
+                </fieldset>
+                <br>
+                    <button type="submit">Enviar</button>
+            </fieldset>   
+        </form>
+    </main>
+
+</body>
+</html>

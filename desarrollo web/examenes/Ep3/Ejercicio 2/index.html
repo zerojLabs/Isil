@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <style>
+        fondo {
+            display: grid;
+            position: relative;
+            grid-row: 1;
+            grid-column:1 ;
+            size: 1fr;
+        }
+
+        .fondo::before {
+        content: "💠Html:Lenguaje de etiquetas de hipertexto";
+        color: blanchedalmond;
+        position: absolute;
+        top: 15%; 
+        left: 3%;
+        }
+
+        .fondo::after {
+        content: "💠-- HTML - CSS - JAVASCRIPT --";
+        color: beige;
+        position: absolute;  
+        top: 20%;
+        right: 3%;  
+        }
+            </style>
+            </head>
+    
+    <body>
+    
+        <div class="fondo">
+            <img src="../../fondos/fondo2.jpg" width=100% "Una imagen">
+        </div>
+        
+    </body>
+</html>

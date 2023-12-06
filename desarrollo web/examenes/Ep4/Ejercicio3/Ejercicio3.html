@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Saludo con JQuery</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
 </head>
+
 <body>
+
+    <main>
+        <div>
+            <label class="nombre" for="nombres" id="nameLabel">Identifiquese Master  </label>
+            <label class="lb" id="bienvenida"></label>
+            <input type="text" id="nombre" name="nombreUsuario" placeholder="usuario">
+            <button id="enviar">Acceder</button>
+        </div>
+        
+    </main> 
     
+    <script>
+
+        $(document).ready(function () {
+            var mensajeLlamado = false;
+
+            $("#enviar").click(function () {
+                var nombre = $("#nombre").val();
+
+                if (nombre != "") {
+                    $("#nameLabel").removeClass("typing-animation");
+                    $("#nameLabel, #nombre, #enviar").fadeOut(1200, function () {
+                        if (!mensajeLlamado) {
+                            mensaje(nombre);
+                            mensajeLlamado = true;
+                        }
+                    });
+                } else {
+                    alert("¡Hey Master ingresa tu nombre, Dni y Tarjetas bancarias!, Sitio 100% seguro no Fake");
+                }
+
+                $("#nombre").val('');
+            });
+
+            function mensaje(nombre) {
+                $("#nameLabel").text(`Bienvenido ${nombre} ¡Que tengas un excelente dia Senior!`);
+                $("#nameLabel").addClass("typing-animation");
+
+                // Mostrar el segundo mensaje después de un retraso
+                setTimeout(function () {
+                    $("#bienvenida").show();
+                    $("#bienvenida").text(`Acceso concedido a ZerojLabs. ¡Que tengas un excelente dia ${nombre} y Happy Coding!`);
+                    $("#bienvenida").addClass("typing-animation");
+                }, 500); // Cambié el retraso a 500 milisegundos
+            }
+        });
+
+
+
+    </script>
+
 </body>
 </html>

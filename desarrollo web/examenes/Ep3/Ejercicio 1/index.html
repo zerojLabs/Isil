@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 6fr 4fr 1fr;
+            grid-template-columns: 6fr 4fr 1fr;
+        }
+
+        .cuadro1{
+            display: grid;
+            background-color: coral;
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .cuadroVacio1{
+            display: grid;
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .cuadro2{
+            display: grid;
+            background-color: rgb(229, 255, 80);
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .cuadroVacio2{
+            display: grid;
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .cuadro3{
+            display: grid;
+            background-color: rgb(117, 168, 243);
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .cuadro4{
+            display: grid;
+            background-color: rgb(163, 119, 235);
+            grid-column: 3;
+            grid-row: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadro1">
+            <p>Three</p>
+        </div>
+        <div class="cuadro2">
+            <p>Two</p>
+        </div>
+        <div class="cuadroVacio1"></div>
+        <div class="cuadroVacio2"></div>
+        <div class="cuadro3">
+            <p>One</p>
+        </div>
+        <div class = "cuadro4">
+            <p>Four</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Reset some default styles */
+body, h1, ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+h2{
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+div{
+    display: flex;
+}
+
+.tituloGeneral {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nombres{
+    margin-top: 5px;
+}
+
+.cuadro{
+    margin-top: 0px;
+    margin-left: 100px;
+    width: 400px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.preguntas{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin-bottom: 30px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+input[type="radio"]{
+    margin-bottom: 4px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+span{
+    display: flex;
+    padding-top: 10px;
+}
+
+  
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,68 @@
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(33, 19, 48);
+}
+
+div{
+    display: grid;
+    place-items: center;    /*alinea elementos al centro del div*/
+    width: 90%;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    border-style:ridge;
+    border-radius: 10px;
+
+}
+
+.nombre{
+    padding-bottom: 30px;
+    font-family:cursive;
+    font-size: 22px;
+    color: aliceblue;
+}
+
+input{
+    width: 85%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    width: 50%;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: cadetblue;
+    background-color: rgb(136, 182, 148);
+    font-family:cursive;
+    font-size: 18px;
+}
+
+#bienvenida {
+    overflow: hidden;
+    white-space: nowrap;
+    caret-color: transparent;
+    display: inline-block;
+    border-right: 1px solid;
+    font-family:cursive;
+    font-size: 22px;
+    color: aliceblue;
+}
+
+.typing-animation {
+    animation: typing 3s steps(30) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
