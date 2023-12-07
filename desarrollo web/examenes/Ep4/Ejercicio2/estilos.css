@@ -1,12 +1,35 @@
 
 h2{
     text-align: center;
+    margin-top: 20px;
 }
 
 #jupiter, #tierra, #saturno{
-    border: 1px solid rgb(91, 139, 179);
-    margin-right: 15px;
-    margin-top: 20px;
-    padding: 15px
-
+    border: 1px solid rgb(91, 139, 179); 
+    padding: 15px;
+    margin: 5px;
+    color: aliceblue;
+    box-shadow: 20px;
 }
+
+img{
+    padding: 20px;
+    margin: 20px;
+}
+
+#principal{
+    margin: 20px 50px 0 50px
+}
+
+@keyframes open {
+    0% {
+      transform: perspective(1500px) rotate3d(0, 1, 0, 0deg); 
+    }
+    100% {
+      transform: perspective(1500px) rotate3d(0, 1, 0, 360deg);
+    }
+  }
+  
+  img {
+    animation: open 10s ease-in-out infinite alternate; 
+  }

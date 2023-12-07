@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Planetas</title>
     <link rel="stylesheet" href="./estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-black">
     
     <main>
-        <div class="container text-center">
-            <div class="row">
+        <div id="principal">
+            <div class="row justify-content-center">
 
-                <div class="col text-start" id="jupiter">
-                    <img src="./img/jupiter.jpg" alt="Planeta Jupiter" class="img-fluid">
-                    <h2>Jupiter</h2>
+                <div class="col text-start col-1 w-25 " id="jupiter">
+                    <div d-flex justify-content-center>
+                        <img src="./img/jupiter.jpg" alt="Planeta Jupiter" class="img-fluid img-spin">
+                        <h2>Jupiter</h2>
+                    </div>
                     <p>
                         Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol.
                         Es un gigante gaseoso que forma parte de los denominados planetas exteriores. 
@@ -28,11 +30,14 @@
                         además de ser, en cuanto a volumen, 1321 veces más grande que la Tierra). 
                         También es el planeta más antiguo del sistema solar, siendo incluso más antiguo que el Sol; 
                         este descubrimiento fue realizado por investigadores de la universidad de Münster en Alemania.
-
                     </p>
+                    <section id="link-jupiter">
+                        <a href="https://es.wikipedia.org/wiki/Júpiter_(planeta)" 
+                                style="text-decoration:none; color: darkgray; font-weight: bold" target="_blank">WIKIPEDIA</a>
+                    </section>
                 </div>
 
-                <div class="col text-start" id="tierra">
+                <div class="col text-start col-2 w-25" id="tierra">
                     <img src="./img/tierra4k.jpg"  alt="Planeta Tierra" class="img-fluid">
                     <h2>Tierra</h2>
                     <p>
@@ -44,10 +49,16 @@
                         Todos los demás planetas del sistema solar recibieron el nombre de una deidad griega o romana, 
                         pero durante al menos 1000 años, algunas culturas han descrito nuestro mundo utilizando la palabra germánica "tierra", 
                         que significa simplemente "el suelo".
-                    </p>
+                        Aunque no podamos sentirlo, la Tierra recorre su órbita a una velocidad media de 29,7 kilómetros por segundo.
+                        La Tierra gira sobre su eje cada 23,9 horas, lo que define el día y la noche para los habitantes de la superficie. 
+                    </p> <br>
+                    <section id="link-tierra">
+                        <a href="https://www.nationalgeographic.es/espacio/explicando-el-planeta-tierra" 
+                                style="text-decoration:none; color: darkgray; font-weight: bold" target="_blank">NATIONAL GEOGRAPHIC</a>
+                    </section>
                 </div>
 
-                <div class="col text-start" id="tierra">
+                <div class="col text-start col-3 w-25" id="tierra">
                     <img src="./img/saturno.jpg"  alt="Planeta Saturno" class="img-fluid">
                     <h2 >Saturno</h2>
                     <p>
@@ -59,7 +70,11 @@
                         El más grande de estos satélites es Titán, que es el segundo más grande del Sistema Solar. Otros satélites son Jano, Atlas, Epimeteo, Prometeo, Pandora, Calipso, Dione, Helena y Febe.
                         Por otro lado, cuenta con un período de rotación sideral de 10.656 horas (10.7) o 0.444 días, por lo que un día en Saturno es más corto que un día terrestre. 
                         Además, el planeta completa una órbita alrededor del Sol en 29 años terrestres.
-                    </p>
+                    </p> <br>
+                    <section id="link-saturno">
+                        <a href="https://www.geoenciclopedia.com/saturno-53.html" 
+                                style="text-decoration:none; color: darkgray; font-weight: bold" target="_blank">GEOENCICLOPEDIA</a>
+                    </section>
                 </div>
                 
             </div>
