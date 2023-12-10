@@ -1,0 +1,24 @@
+/* MENSAJE DE BIENVENIDA */
+#bienvenida {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background: #080116;
+    color: #fff;
+    transition: opacity 1s;  
+  }
+  
+#bienvenida h1 {
+  font-family: 'Montserrat', sans-serif;  
+}
+
+#bienvenida::before {
+  content: "💻";
+  font-size: 4rem;
+}

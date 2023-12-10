@@ -3,11 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi page
-    </title>
+    <title>Codex</title>
+    <link rel="stylesheet" href="./estilos/Introduccion.css">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <script src="./scripts/script.js"></script>
+    
 </head>
 <body>
     
-    <h1>ssola</h1>
+    <header>
+        <h1>Lenguajes de Programación</h1>
+        <p>Explora los lenguajes más populares y sus características.</p>
+    </header>
+
+    <nav>
+        <a href="#python">Python</a> |
+        <a href="#javascript">JavaScript</a> |
+        <a href="#java">Java</a> |
+        <a href="#csharp">C#</a> |
+        <a href="#php">PHP</a> |
+        <a href="#cplusplus">C++</a>
+    </nav>
+
+    <main>
+        <!-- Python Section -->
+        <section id="python">
+            <h2>Python</h2>
+            <img src="./img/python.png" width="200" height="200" alt="Python Logo">
+            <article>
+                <p>Python es un lenguaje de programación de alto nivel conocido por su sintaxis clara y legible.</p>
+                <ul>
+                    <li>Fecha de Creación: 1991</li>
+                    <li>Paradigma: Multiparadigma</li>
+                    <li>Frameworks Populares: Django, Flask</li>
+                </ul>
+                <h3>Usos Comunes</h3>
+                <p>Desarrollo web, inteligencia artificial, análisis de datos.</p>
+                <h3>Ejemplo</h3>
+                <div class="code-example">
+                    <pre><code>
+print("Hola, Mundo!")
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+    
+
+        <!-- Java Section -->
+        <section id="java">
+            <h2>Java</h2>
+            <img src="./img/java.jpg" width="250" height="250" alt="Java Logo">
+            <article>
+                <p>Java es un lenguaje de programación de propósito general y orientado a objetos.</p>
+                <ul>
+                    <li>Fecha de Creación: 1995</li>
+                    <li>Paradigma: Orientado a Objetos</li>
+                    <li>Frameworks Populares: Spring, Hibernate</li>
+                </ul>
+                <h3>Usos Comunes</h3>
+                <p>Desarrollo de aplicaciones empresariales, desarrollo Android.</p>
+                <h3>Ejemplo</h3>
+                <div class="code-example">
+                    <pre><code>
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola, Mundo!");
+    }
+}
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+        <!-- C# Section -->
+        <section id="csharp">
+            <h2>C#</h2>
+            <img src="./img/CSharp.png" width="150" height="150" alt="C# Logo">
+            <article>
+                <p>C# (C Sharp) es un lenguaje de programación desarrollado por Microsoft.</p>
+                <ul>
+                    <li>Fecha de Creación: 2000</li>
+                    <li>Paradigma: Orientado a Objetos</li>
+                    <li>Frameworks Populares: ASP.NET, Xamarin</li>
+                </ul>
+                <h3>Usos Comunes</h3>
+                <p>Desarrollo de aplicaciones Windows, desarrollo web con ASP.NET.</p>
+                <h3>Ejemplo</h3>
+                <div class="code-example">
+                    <pre><code>
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hola, Mundo!");
+    }
+}
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+    
+        <!-- C++ Section -->
+        <section id="cplusplus">
+            <h2>C++</h2>
+            <img src="./img/c++.png" width="200" height="150" alt="C++ Logo">
+            <article>
+                <p>C++ es un lenguaje de programación de propósito general, derivado del lenguaje C.</p>
+                <ul>
+                    <li>Fecha de Creación: 1979</li>
+                    <li>Paradigma: Multiparadigma</li>
+                    <li>Frameworks Populares: Qt</li>
+                </ul>
+                <h3>Usos Comunes</h3>
+                <p>Desarrollo de software de sistema, desarrollo de juegos.</p>
+                <h3>Ejemplo</h3>
+                <div class="code-example">
+                    <pre><code>
+#include <iostream>
+
+int main() {
+    std::cout << "Hola, Mundo!" << std::endl;
+    return 0;
+}
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+         <!-- JavaScript Section -->
+         <section id="javascript">
+            <h2>JavaScript</h2>
+            <img src="./img/js.png" width="200" height="150" alt="JavaScript Logo">
+            <article>
+                <p>JavaScript es un lenguaje de programación ampliamente utilizado para desarrollo web.</p>
+                <ul>
+                    <li>Fecha de Creación: 1995</li>
+                    <li>Paradigma: Multiparadigma</li>
+                    <li>Frameworks Populares: React, Angular, Vue.js</li>
+                </ul>
+                <h3>Usos Comunes</h3>
+                <p>Desarrollo web interactivo, construcción de interfaces de usuario.</p>
+                <h3>Ejemplo</h3>
+                <div class="code-example">
+                    <pre><code>
+const saludar = () => {
+    console.log("Hola, Mundo!");
+};
+saludar();
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+        <!-- Kotlin Section -->
+        <section id="kotlin">
+            <h2>Kotlin</h2>
+            <img src="./img/kotlin.jpg" width="200" height="150" alt="Kotlin Logo">
+            <article>
+                <p>Kotlin es un lenguaje de programación moderno desarrollado por JetBrains.</p>
+                <ul>
+                    <li>Fecha de Creación: 2011</li>
+                    <li>Paradigma: Orientado a Objetos, Funcional</li>
+                    <li>Frameworks Populares: Ktor (para desarrollo web)</li>
+                </ul>
+                <h3>Usos Comunes</h3>
+                <p>Desarrollo de aplicaciones Android, desarrollo web con Ktor.</p>
+                <h3>Ejemplo</h3>
+                <div class="code-example">
+                    <pre><code>
+fun main() {
+    println("Hola, Mundo!")
+}
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lenguajes de Programación</p>
+    </footer>
 </body>
 </html>
