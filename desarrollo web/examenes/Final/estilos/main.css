@@ -1,3 +1,5 @@
+
+/* ESTILOS GENERALES DEL DOCUMENTO */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -9,39 +11,82 @@ body {
     min-height: 100vh;
 }
 
+/* ESTILO PARA LA SECCION DE ENCABEZADO */
 header {
-    background-color: #333;
+    background-color: #183553;
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    position: relative;
+    overflow: hidden;
 }
 
+/* ESTILOS DEL TITULO PRINCIPAL DEL ENCABEZADO  */
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+/* ESTILOS PARA EL PARRAFO DEL ENCABEZADO */
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* ESTILOS PARA LA BARRA DE NAVEGACION */
 nav {
     background-color: #eee;
     padding: 1em;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
+/* ESTILOS PARA LOS ENLACES DE NAVEGACION */
 nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px;
     text-decoration: none;
     color: #333;
-    margin: 0 1em;
-    transition: color 0.3s ease-in-out;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+/* ESTILOS PARA LOS ENLACES DE NAV.. AL PASAR EL MOUSE SOBRE ELLOS */
 nav a:hover {
-    color: #007bff;
+    background-color: #007bff;
+    color: #fff;
 }
 
+/* ESTILOS GENERALES DEL CUERPO PRINCIPAL */
 main {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Permitir que las secciones se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas pequeñas */
     padding: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
+/* ANIMACION DE LA SECCION PRINCIPAL */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ESTILOS GENERALES PARA CADA SECCION QIE CONTIENE INFORMACION DE CADA LENGUAJE */
 section {
     background-color: #fff;
     border-radius: 10px;
@@ -57,50 +102,63 @@ section:hover {
     transform: scale(1.05); /* Efecto de escala al pasar el mouse sobre la sección */
 }
 
+/* Estilos para el contenido dentro de cada sección */
 article {
     padding: 20px;
 }
 
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
+/* Estilos para los subtítulos de sección */
 h3 {
-    color: #007bff;
-    margin-top: 0;
+    color: #438bd3;
+    margin-top: 15px;
 }
 
+/* Estilos para los párrafos de sección */
 p {
     color: #555;
     line-height: 1.6;
 }
 
+/* Estilos para las listas no ordenadas de sección */
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.code-example {
-    background-color: #000;
+/* Estilos para el código de ejemplo dentro de una sección */
+.codigo-ejemplo {
+    background-color: #091535;
     color: #fff;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Courier New', monospace; /* Fuente de monoespaciado para mejor legibilidad */
+    /*white-space: pre-wrap;  Mantiene los saltos de línea */
 }
 
+.logo-lenguage{
+    text-align: center;
+}
+
+/* Estilos para las imágenes */
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
+    padding: 25px 0 0 15px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
+/* Efecto de escala al pasar el mouse sobre la imagen */
 img:hover {
-    transform: scale(1.1); /* Efecto de escala al pasar el mouse sobre la imagen */
+    transform: scale(1.2); 
 }
 
+/* Estilos para el pie de página */
 footer {
     background-color: #333;
     color: #fff;
