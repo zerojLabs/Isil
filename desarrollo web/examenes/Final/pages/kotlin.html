@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeX -Kotlin</title>
-    <link rel="icon" href="./ico/icoL.png" type="image/x-icon">
+    <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/kotlin.css">
 </head>
 <body>
     
+    <header>
+        <img src="../img/kotlin.jpg" width="150px" height="150px" alt="Descripción de la imagen">
+        <!-- <h1>Kotlin</h1> -->
+        <p>Explora el lenguaje de programación Kotlin y su versatilidad en el desarrollo de aplicaciones modernas.</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Inicio</a> |
+        <a href="#introduccion">Introducción</a> |
+        <a href="#caracteristicas">Características</a> |
+        <a href="#usos">Usos Comunes</a> |
+        <a href="#ejemplos">Ejemplos de Código</a>
+    </nav>
+
+    <main>
+        <!-- Introducción Section -->
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <article>
+                <p>Kotlin es un lenguaje de programación moderno que se ejecuta en la máquina virtual de Java (JVM). Fue desarrollado por JetBrains con el objetivo de mejorar la productividad en el desarrollo de software.</p>
+            </article>
+        </section>
+
+        <!-- Características Section -->
+        <section id="caracteristicas">
+            <h2>Características</h2>
+            <article>
+                <h3>Interoperabilidad con Java</h3>
+                <p>Kotlin es completamente interoperable con Java, lo que significa que puedes utilizar bibliotecas de Java directamente en proyectos de Kotlin y viceversa.</p>
+
+                <h3>Seguro y Conciso</h3>
+                <p>Ofrece características que mejoran la seguridad y concisión del código, como la inferencia de tipos, la nulabilidad controlada y las expresiones más concisas.</p>
+
+                <!-- Agrega más características según sea necesario -->
+
+                <h3>Programación Funcional</h3>
+                <p>Kotlin soporta programación funcional, lo que permite escribir código más expresivo y fácil de entender.</p>
+            </article>
+        </section>
+
+        <!-- Usos Comunes Section -->
+        <section id="usos">
+            <h2>Usos Comunes</h2>
+            <article>
+                <p>Kotlin se utiliza en una variedad de aplicaciones, incluyendo:</p>
+                <ul>
+                    <li>Desarrollo de aplicaciones Android.</li>
+                    <li>Desarrollo de aplicaciones empresariales.</li>
+                    <li>Desarrollo web con frameworks como Ktor.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Ejemplos de Código Section -->
+        <section id="ejemplos">
+            <h2>Ejemplos de Código</h2>
+            <article>
+                <h3>Hola, Mundo!</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+fun main() {
+    println("Hola, Mundo!")
+}
+                    </code></pre>
+                </div>
+
+                <h3>Funciones de Extensión</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+fun String.saludar() {
+    println("¡Hola, $this!")
+}
+
+fun main() {
+    "Kotlin".saludar()
+}
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Kotlin - Codex</p>
+    </footer>
 </body>
 </html>

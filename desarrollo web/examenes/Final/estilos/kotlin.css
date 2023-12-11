@@ -1,0 +1,156 @@
+body {
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #814a0a;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+header img {
+    max-width: 120px; /* Ajusta el tamaño de la imagen según tu preferencia */
+    margin: 50px 50px 0 30px;
+}
+
+header h1 {
+    margin: 0 50px 50px 30px;
+    padding-top: 100px;
+    font-size: 2em; /* Aumenta el tamaño del título */
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 10px 10px 10px;
+    padding-top: 55px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgb(163, 163, 163);
+}
+
+nav {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ESTILOS PARA LOS ENLACES DE NAVEGACION */
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* ESTILOS PARA LOS ENLACES DE NAV.. AL PASAR EL MOUSE SOBRE ELLOS */
+nav a:hover {
+    background-color: #c07025;
+    color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 100%;
+    padding: 30px 50px 50px 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+article {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Añadido espacio inferior */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.codigo-ejemplo {
+    background-color: #0d0324;
+    color: #fff;
+    padding: 15px; /* Aumentado el relleno */
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
