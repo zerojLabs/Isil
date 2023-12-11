@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeX -C#</title>
-    <link rel="icon" href="./ico/icoL.png" type="image/x-icon">
+    <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/csharp.css">
 </head>
 <body>
-    
+    <header>
+        <img src="../img/CSharp.png" width="100px" height="100px" alt="c#">
+        <h1>C Sharp</h1>
+        <p>Explora el lenguaje de programación C# y sus aplicaciones en el desarrollo de software.</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Inicio</a> |
+        <a href="#introduccion">Introducción</a> |
+        <a href="#caracteristicas">Características</a> |
+        <a href="#ejemplos">Ejemplos de Código</a> |
+        <a href="#frameworks">Frameworks</a>
+    </nav>
+
+    <main>
+        <!-- Introducción Section -->
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <article>
+                <p>C# (pronunciado "C sharp") es un lenguaje de programación moderno desarrollado por Microsoft. Fue diseñado para ser simple, eficiente y seguro.</p>
+                <p>En esta sección, exploraremos los principios básicos de C# y su aplicación en el desarrollo de software.</p>
+            </article>
+        </section>
+
+        <!-- Características Section -->
+        <section id="caracteristicas">
+            <h2>Características</h2>
+            <article>
+                <h3>Orientado a Objetos</h3>
+                <p>C# es un lenguaje orientado a objetos, lo que significa que se basa en la concepto de objetos, que pueden contener datos en forma de campos (atributos) y código en forma de procedimientos (métodos).</p>
+
+                <h3>Tipado Fuerte</h3>
+                <p>En C#, las variables deben declararse con un tipo específico y no se pueden cambiar después de la declaración. Esto se conoce como tipado fuerte y ayuda a prevenir errores en tiempo de ejecución.</p>
+
+                <!-- Agrega más características según sea necesario -->
+
+                <h3>Programación Asíncrona</h3>
+                <p>C# ofrece soporte para programación asíncrona mediante la palabra clave `async` y `await`, permitiendo la ejecución de tareas sin bloquear el hilo principal.</p>
+            </article>
+        </section>
+
+        <!-- Ejemplos de Código Section -->
+        <section id="ejemplos">
+            <h2>Ejemplos de Código</h2>
+            <article>
+                <h3>Hola, Mundo!</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hola, Mundo!");
+    }
+}
+                    </code></pre>
+                </div>
+
+                <h3>Clase y Objeto</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+class Persona
+{
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+}
+
+// Crear un objeto Persona
+Persona persona1 = new Persona();
+persona1.Nombre = "John Doe";
+persona1.Edad = 30;
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+        <!-- Frameworks Section -->
+        <section id="frameworks">
+            <h2>Frameworks</h2>
+            <article>
+                <h3>ASP.NET</h3>
+                <p>ASP.NET es un marco de desarrollo web de C# utilizado para construir aplicaciones web modernas y escalables.</p>
+
+                <h3>Xamarin</h3>
+                <p>Xamarin permite el desarrollo de aplicaciones móviles multiplataforma utilizando C# y .NET, compartiendo código entre iOS y Android.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 C# - Codex</p>
+    </footer><header>
+
 </body>
 </html>

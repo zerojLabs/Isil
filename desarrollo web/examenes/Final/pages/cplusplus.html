@@ -4,8 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeX -C++</title>
-    <link rel="icon" href="./ico/icoL.png" type="image/x-icon">
+    <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/cplusplus.css">
 <body>
     
+    <header>
+        <img src="../img/c++.png" alt="Descripción de la imagen">
+        <h1>C++</h1>
+        <p>Explora el lenguaje de programación C++ y sus aplicaciones en el desarrollo de software.</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Inicio</a> |
+        <a href="#introduccion">Introducción</a> |
+        <a href="#caracteristicas">Características</a> |
+        <a href="#ejemplos">Ejemplos de Código</a> |
+        <a href="#frameworks">Frameworks</a>
+    </nav>
+
+    <main>
+        <!-- Introducción Section -->
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <article>
+                <p>C++ es un lenguaje de programación de propósito general que extiende el lenguaje de programación C con características de programación orientada a objetos.</p>
+                <p>En esta sección, exploraremos los principios básicos de C++ y su aplicación en el desarrollo de software.</p>
+            </article>
+        </section>
+
+        <!-- Características Section -->
+        <section id="caracteristicas">
+            <h2>Características</h2>
+            <article>
+                <h3>Programación Orientada a Objetos</h3>
+                <p>C++ soporta programación orientada a objetos, lo que permite organizar el código en clases y objetos para facilitar la reutilización y la estructuración del código.</p>
+
+                <h3>Memoria Dinámica</h3>
+                <p>C++ permite la asignación y liberación de memoria de forma manual, ofreciendo un mayor control sobre los recursos del sistema.</p>
+
+                <!-- Agrega más características según sea necesario -->
+
+                <h3>Plantillas (Templates)</h3>
+                <p>C++ introduce el concepto de plantillas que permite la creación de código genérico para trabajar con diferentes tipos de datos sin perder eficiencia en tiempo de ejecución.</p>
+            </article>
+        </section>
+
+        <!-- Ejemplos de Código Section -->
+        <section id="ejemplos">
+            <h2>Ejemplos de Código</h2>
+            <article>
+                <h3>Hola, Mundo!</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    std::cout &lt;&lt; "Hola, Mundo!" &lt;&lt; std::endl;
+    return 0;
+}
+                    </code></pre>
+                </div>
+
+                <h3>Clases y Herencia</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+class Animal {
+public:
+    virtual void hacerSonido() const = 0;
+};
+
+class Perro : public Animal {
+public:
+    void hacerSonido() const override {
+        std::cout &lt;&lt; "Guau guau" &lt;&lt; std::endl;
+    }
+};
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+        <!-- Frameworks Section -->
+        <section id="frameworks">
+            <h2>Frameworks</h2>
+            <article>
+                <p>Si bien C++ no tiene frameworks integrados como otros lenguajes, es común utilizar bibliotecas adicionales para tareas específicas, como SDL para gráficos y OpenGL para gráficos 3D.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 C++ - Codex</p>
+    </footer>
 </body>
 </html>
