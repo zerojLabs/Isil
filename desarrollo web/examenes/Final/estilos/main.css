@@ -12,27 +12,37 @@ body {
 }
 
 /* ESTILO PARA LA SECCION DE ENCABEZADO */
-header {
-    background-color: #183553;
+.encabezado {
+    background-color: #1d2c3d;
     color: #fff;
     text-align: center;
     padding: 1em 0;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width: 300px; /* Ajusta el tamaño de la imagen según tu preferencia */
+    margin: 40px 0 0 10px;
 }
 
 /* ESTILOS DEL TITULO PRINCIPAL DEL ENCABEZADO  */
 header h1 {
-    margin: 0;
-    font-size: 1.5em;
+    margin: 0 50px 50px 50px;
+    padding-top: 100px;
+    font-size: 2em; /* Aumenta el tamaño del título */
     letter-spacing: 2px;
 }
 
 /* ESTILOS PARA EL PARRAFO DEL ENCABEZADO */
 header p {
-    margin: 10px 0 0;
+    margin: 10px 10px 10px 10px;
+    padding-top: 55px;
     font-size: 1.2em;
     font-style: italic;
+    color: rgb(163, 163, 163);
 }
 
 /* ESTILOS PARA LA BARRA DE NAVEGACION */

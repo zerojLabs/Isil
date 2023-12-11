@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeX -Python</title>
+    <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/python.css">
+</head>
+<body>
+    
+    <header>
+        <div><img src="../img/python.png" width="120px" height="120px" alt="python"></div>
+        <div><h1>Python</h1></div>
+        <div><p>Explora las maravillas de Python, desde las bases hasta conceptos avanzados.</p></div>
+    </header>
+
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="#conceptos">Conceptos Básicos</a>
+        <a href="#data-structures">Estructuras de Datos</a>
+        <a href="#advanced">Conceptos Avanzados</a>
+        <a href="#modules">Módulos Populares</a>
+        <a href="#examples">Ejemplos</a>
+        <a href="#recursos">Recursos</a>
+    </nav>
+
+    <main>
+
+        <!-- Conceptos Básicos Section -->
+        <section id="conceptos">
+            <h2>Conceptos Básicos</h2>
+            <article>
+                <h3>Sintaxis Sencilla</h3>
+                <p>Python se destaca por su sintaxis clara y concisa. Su diseño hace que sea fácil leer y escribir código, lo que facilita su aprendizaje para principiantes.</p>
+
+                <h3>Tipos de Datos</h3>
+                <p>Python incluye varios tipos de datos:</p>
+                <ul>
+                    <li><strong>Enteros:</strong> Números enteros, como 42.</li>
+                    <li><strong>Flotantes:</strong> Números decimales, como 3.14.</li>
+                    <li><strong>Cadenas:</strong> Secuencias de caracteres, como "Hola, Mundo!".</li>
+                    <li><strong>Listas:</strong> Colecciones ordenadas de elementos.</li>
+                    <li><strong>Diccionarios:</strong> Colecciones de pares clave-valor.</li>
+                </ul>
+
+                <h3>Estructuras de Control</h3>
+                <p>Python soporta estructuras de control como condicionales (if, else) y bucles (for, while), proporcionando herramientas poderosas para la creación de programas.</p>
+
+                <h3>Funciones</h3>
+                <p>Las funciones en Python permiten encapsular bloques de código para su reutilización. Se definen con la palabra clave <code>def</code>.</p>
+
+                <h3>Clases y Objetos</h3>
+                <p>Python es un lenguaje orientado a objetos. Las clases y objetos son fundamentales para la programación orientada a objetos.</p>
+            </article>
+        </section>
+
+        <!-- Ejemplos de Código Section -->
+        <section id="ejemplos">
+            <h2>Ejemplos de Código</h2>
+            <article>
+                <h3>Hola, Mundo!</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+print("Hola, Mundo!")
+                    </code></pre>
+                </div>
+
+                <h3>Bucle For</h3>
+                <div class="codigo-ejemplo">
+                    <pre><code>
+for i in range(5):
+    print(i)
+                    </code></pre>
+                </div>
+            </article>
+        </section>
+
+        <!-- Data Structures Section -->
+        <section id="data-structures">
+            <h2>Estructuras de Datos en Python</h2>
+            <p>Python proporciona diversas estructuras de datos para manejar información de manera eficiente.</p>
+            <h3>Listas</h3>
+            <code>
+                numeros = [1, 2, 3, 4, 5]
+                </code>
+            <h3>Diccionarios</h3>
+            <code>
+                estudiante = {'nombre': 'Juan', 'edad': 25, 'curso': 'Python'}
+                </code>
+            <!-- Puedes agregar más ejemplos de estructuras de datos -->
+        </section>
+
+        <!-- Advanced Section -->
+        <section id="advanced">
+            <h2>Conceptos Avanzados</h2>
+            <p>A medida que te vuelves más familiarizado con Python, puedes explorar conceptos avanzados como funciones, clases, y manipulación de archivos.</p>
+            <h3>Funciones</h3>
+            <code>
+                def saludar(nombre):
+                    print(f"Hola, {nombre}!")
+
+                saludar("Juan")
+            </code>
+            <h3>Clases</h3>
+            <code>
+                class Rectangulo:
+                    def __init__(self, largo, ancho):
+                        self.largo = largo
+                        self.ancho = ancho
+
+                    def calcular_area(self):
+                        return self.largo * self.ancho
+                </code>
+            <h3>Manejo de Excepciones</h3>
+            <code>
+                try:
+                    resultado = 10 / 0
+                except ZeroDivisionError:
+                    print("No puedes dividir entre cero.")
+                </code>
+        </section>
+
+        <!-- Modules Section -->
+        <section id="modules">
+            <h2>Módulos Populares de Python</h2>
+            <p>Python tiene una amplia variedad de módulos que extienden su funcionalidad. Aquí hay algunos populares:</p>
+            <ul>
+                <li><strong>NumPy:</strong> Manipulación de arreglos y operaciones matemáticas.</li>
+                <li><strong>Pandas:</strong> Análisis de datos y manipulación.</li>
+                <li><strong>Matplotlib:</strong> Visualización de datos.</li>
+            </ul>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples">
+            <h2>Ejemplos de Código</h2>
+            <h3>Iteradores y Comprehension</h3>
+            <code>
+                numeros = [1, 2, 3, 4, 5]
+                cuadrados = [x**2 for x in numeros]
+                print(cuadrados)
+            </code>
+            <h3>Operaciones con Archivos</h3>
+            <code>
+                with open("archivo.txt", "r") as archivo:
+                    contenido = archivo.read()
+                    print(contenido)
+                </code>
+            <!-- Agrega más ejemplos según lo que desees incluir -->
+        </section>
+
+
+        <!-- Recursos Section -->
+        <section id="recursos">
+            <h2>Recursos</h2>
+            <article>
+                <h3>Documentación Oficial</h3>
+                <p>La <a href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer">documentación oficial de Python</a> es un recurso invaluable para aprender más sobre el lenguaje y sus características.</p>
+
+                <h3>Comunidades en línea</h3>
+                <p>Participar en comunidades en línea como <a href="https://stackoverflow.com/questions/tagged/python" target="_blank" rel="noopener noreferrer">Stack Overflow</a> puede proporcionar respuestas a preguntas específicas y fomentar la interacción con otros programadores.</p>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Python Lenguaje de Programación</p>
+    </footer>
+</body>
+</html>
