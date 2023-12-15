@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+   <h3>Desarrollar un app que te le pida al usuario cuantos numeros en matrix de 5 x5 
+       quieres imprimir
+   </h3>
+      
+    <script> 
+    
+    let numero
+    let arreglo=[]
+    let cantidad
+    let z
+
+    cantidad=parseInt(prompt("Ingrese la cantidad de veces a repetir"))
+
+    numero=parseInt(prompt("Ingrese le numero que quiere convertir en matriz"))
+
+
+    f=[1,2,3,4,6,11,12,13,16,21]
+    e=[1,2,3,4,6,11,12,13,16,21,22,23,24]
+    l=[1,6,11,16,21,22,23,24]
+    i=[2,3,4,8,13,18,22,23,24]
+    z=[]
+    n=[]
+    a=[]
+    v=[]
+    d=[]
+    dos=[]
+    cero=[]
+    cuatro=[]
+
+
+
+    arreglo=convertir(numero)
+    
+    for(var x=1;x<=5;x++){
+       for(var y=1;y<=cantidad*6;y++){
+          if(y%6==0){
+            document.write("&nbsp&nbsp")
+            continue
+          }
+          if(y>6){
+             z=y%6
+          }else{
+            z=y
+          }
+          if(arreglo.includes(5*(x-1)+z)){
+             document.write("*")
+          }else{
+             document.write("&nbsp&nbsp")
+          }
+
+       }
+       document.write("<br>")
+    }
+
+
+
+    function convertir(numeroc){
+       switch(numeroc){
+          case 4:
+             return e;
+             break;
+          case 5:
+             return f;
+             break;
+          case 7:
+             return l;
+             break;
+          case 8:
+             return i;
+             break;
+          default:
+             return 0;
+       }
+    }
+
+
+
+    </script>
+</body>
+</html>

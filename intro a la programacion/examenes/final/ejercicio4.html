@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    
+        <script>
+            const n = parseInt(prompt('Ingrese numero'));
+            let z = 1
+            let m = n-1
+
+            for (let x = 1; x <= n; x++) {
+                for (let y = 1; y <= n; y++) {
+                    if (x == n && y == n) {
+                        kill(n)
+                    } else {
+                        if (x == n || y == n) {
+                            if (z == n) {
+                                z = 1
+                            }
+                            kill(z)
+                            z++
+                        } else {
+                            kill("&nbsp;&nbsp;")
+                        }
+                    }
+                }
+                if(x<n){
+                    kill("<br>")
+                }
+            }
+
+            for (let x = 1; x < n ; x++) {
+                kill(m);
+                m--
+            }
+            kill("<br>")
+
+            for (let b = n-1; b >= 1; b--) {
+                for (let c = n; c >= 1; c--) {
+                    if(c==1){
+                        kill(b)
+                    } else{
+                        kill("&nbsp;&nbsp;")
+                    }
+
+                }
+                kill("<br>")
+            }
+
+
+
+
+            function kill(texto){
+                document.write(texto)
+            }
+
+        </script>
+    </body>
+</html>
