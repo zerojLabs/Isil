@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio2</title>
+
+  <style>
+    span{
+        color: rgb(212, 212, 19);
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    // Función que verifica si un número es primo
+    function esPrimo(valor) {
+      if (valor < 2) return false;
+      for (var x = 2; x <= Math.sqrt(valor); x++) {
+        if (valor % x === 0) return false;
+      }
+      return true;
+    }
+
+    function generarCombinacionesHastaPrimos() {
+      var combinaciones = [];
+      var primosEncontrados = 0;
+
+      while (primosEncontrados < 5) {
+        var array = [];
+
+        while (array.length < 5) {
+          var numero = Math.floor(Math.random() * 20) + 1;
+          if (!array.includes(numero)) {
+            array.push(numero);
+          }
+        }
+
+        document.write(`Resultado ${combinaciones.length + 1}: ${array.sort().join('<span>☻</span>, ')}<span>☻</span><br>`);
+
+        if (array.filter(esPrimo).length === 5) {
+          primosEncontrados++;
+        }
+
+        combinaciones.push(array);
+      }
+    }
+
+    generarCombinacionesHastaPrimos();
+  </script>
+
+</body>
+</html>

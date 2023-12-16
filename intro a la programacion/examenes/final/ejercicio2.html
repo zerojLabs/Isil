@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio2</title>
+
+  <style>
+    span{
+        color: rgb(212, 212, 19);
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+
+    let numeros = [];
+    let fin = true
+
+    // Función que verifica si un número es primo
+    function esPrimo(numero) {
+      if (numero < 2) return false;
+        for (var x = 2; x <= Math.sqrt(numero); x++) {
+          if (numero % x === 0) return false;
+        }
+        return true
+    }
+
+
+      while(fin){
+        sacarBolitas()
+      }
+      
+   
+      
+      function sacarBolitas() {
+        let nIntento = 1
+
+        while(numeros.length <5){
+          kill(`Intento N.${nIntento}> ` )
+            for(let x=1; x<=5; x++){
+              let nRandom = aleatorio();
+              numeros.push(nRandom)
+            }
+            if(numeros.every(esPrimo)){
+              kill("todos son primos")
+              fin = false
+            } else {
+              kill(numeros)
+            }
+          nIntento++;
+         
+        }
+        
+      }
+      kill('<br>')
+
+      function aleatorio(){
+        let num = Math.floor(Math.random() * 20) + 1;
+        return num
+      }
+
+      function kill(texto){
+            document.write(texto)
+      }
+        // byZerojLabs
+
+  </script>
+
+</body>
+</html>

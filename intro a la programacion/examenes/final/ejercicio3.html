@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio3</title>
+</head>
+<body>
+    <script>
+        let h = parseInt(prompt('Ingrese el alto de su Triangulo Cuadrangulo :v')) //altura
+        let a = 3; let b = 2;
+        kill(`Triangulo un alto y base por lado de ${h} letras` + '<br><br>')
+
+          for (let x = 1; x <= h; x++) {
+              for (let y = 1; y <= h; y++){
+                if(x==h || y==h || (x==2 && y==h-1)){
+                  kill('x')
+                } else {
+                  if(x==a && y==h-b){
+                    kill('x')
+                    a++; b++;
+                  } else {
+                    kill('&nbsp;&nbsp;')
+                  }
+                }
+              }
+              kill('<br>')
+          }
+
+        function kill(texto){
+            document.write(texto)
+        }
+        // byZerojLabs
+    </script>
+  </body> 
+</html>
