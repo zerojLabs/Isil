@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4</title>
+    <style>
+        body{
+            background-color: rgb(7, 21, 37);
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: antiquewhite;
+        }
+
+    </style>
 </head>
-<body>
+<body id="general">
     
+    <div>
         <script>
             const n = parseInt(prompt('Ingrese numero'));
             let z = 1
             let m = n-1
 
+            //-------------------------------------------
             for (let x = 1; x <= n; x++) {
                 for (let y = 1; y <= n; y++) {
                     if (x == n && y == n) {
@@ -32,13 +47,13 @@
                     kill("<br>")
                 }
             }
-
+            //-------------------------------------------
             for (let x = 1; x < n ; x++) {
                 kill(m);
                 m--
             }
             kill("<br>")
-
+            //-------------------------------------------
             for (let b = n-1; b >= 1; b--) {
                 for (let c = n; c >= 1; c--) {
                     if(c==1){
@@ -50,14 +65,21 @@
                 }
                 kill("<br>")
             }
-
-
+            //-------------------------------------------
+            //-------------------------------------------------------------
+        function frmt(num) {
+        return num.toString().padStart(2, '0');
+        }
+        //-------------------------------------------------------------
 
 
             function kill(texto){
                 document.write(texto)
             }
 
+             //-------------------------------------------------------------
+        // byZerojLabs
         </script>
+      </div>
     </body>
 </html>

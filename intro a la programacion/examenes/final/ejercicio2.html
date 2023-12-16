@@ -6,66 +6,73 @@
   <title>Ejercicio2</title>
 
   <style>
-    span{
-        color: rgb(212, 212, 19);
+    #general{
+      font-family: monospace;
+      line-height: 1.7;
+      
     }
   </style>
 </head>
-<body>
+<body id="general">
 
   <script>
 
-    let numeros = [];
-    let fin = true
+    let serie = [];
+    let seriePrima = [];
+    let serieEncontrada = false
+    let i =1
 
-    // Función que verifica si un número es primo
-    function esPrimo(numero) {
-      if (numero < 2) return false;
-        for (var x = 2; x <= Math.sqrt(numero); x++) {
-          if (numero % x === 0) return false;
+    
+    tinka()
+    
+    function tinka(){
+      while(serieEncontrada == false){
+        const serie = Array.from({ length: 5 }, aleatorio); //crea ei ntegra al array 5 elementos aletorios
+        const set = new Set(serie); //nuevo set que acumula solo valores unicos
+        kill("<br>")
+        if(serie.every(esPrimo) && (set.size === serie.length)){ //verifa si un array es primo y tiene valores unicos
+          serieEncontrada = true
         }
-        return true
+        if(!serieEncontrada){
+          kill(`Intento ${frmt(i)} ` + serie.map(n => { if(esPrimo(n)){return ` | ${frmt(n)} 🟡 |`} else{return ` | ${frmt(n)} 🔴 |`} }))
+        } else {
+          kill(`Intento ${frmt(i)} ` + serie.map(n => ` | ${frmt(n)} 🟡 |`))
+          kill("<br><br>")
+          kill(`Intento ${frmt(i)} win >> ` + serie.map(n => `${frmt(n)} ⭐ `))
+          kill("<br><br><br> >byZerojLabs<")
+          }
+          i++
+      }
     }
 
 
-      while(fin){
-        sacarBolitas()
-      }
-      
-   
-      
-      function sacarBolitas() {
-        let nIntento = 1
 
-        while(numeros.length <5){
-          kill(`Intento N.${nIntento}> ` )
-            for(let x=1; x<=5; x++){
-              let nRandom = aleatorio();
-              numeros.push(nRandom)
-            }
-            if(numeros.every(esPrimo)){
-              kill("todos son primos")
-              fin = false
-            } else {
-              kill(numeros)
-            }
-          nIntento++;
-         
-        }
-        
-      }
-      kill('<br>')
 
+    //-------------------------------------------------------------
+    function frmt(num) {
+      return num.toString().padStart(2, '0');
+    }
+    //-------------------------------------------------------------
+    //Funcion que genera un numero aleatorio entre 1 al 20
+    //-------------------------------------------------------------
       function aleatorio(){
-        let num = Math.floor(Math.random() * 20) + 1;
-        return num
+        return Math.ceil(Math.random() * 20);
       }
-
+      //-------------------------------------------------------------
+      // Función que verifica si un número es primo
+      //-------------------------------------------------------------
+      function esPrimo(numero) {
+        if (numero < 2) return false;
+          for (let x = 2; x <= Math.sqrt(numero); x++)
+            if (numero % x === 0) return false;
+          return true
+      }
+       //-------------------------------------------------------------
       function kill(texto){
             document.write(texto)
       }
+       //-------------------------------------------------------------
         // byZerojLabs
-
   </script>
 
 </body>

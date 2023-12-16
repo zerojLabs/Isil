@@ -9,15 +9,29 @@
     <style>
         body {
             display: flex;
+            line-height: 1;
+
+        }
+        .principal{
+            display: flex;
+            justify-content: center;
+            height: 60vh;
+            width: 100vh;
+            align-items: center;
         }
 
-        #arbol {
-            color: green;
+        .partA {
             font-weight: bold;
+            margin-right: 50px;
+            background: linear-gradient(to bottom, green 58%, rgb(71, 52, 52) 50%);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            
         }
 
-        #texto {
-            color: red;
+        .partB {
+            color: rgb(160, 17, 17);
             font-weight: bold;
         }
     </style>
@@ -26,25 +40,28 @@
 
 <body>
 
-    <div id="arbol">
+    <div class="principal">
+    <div class="partA">
         <script>
-            var numero2, arreglo2 = [], cantidad2, n2;
+            let num2 = 'F';
+            let arreglo2 = [] 
+            let cant2;
+            let n2;
 
-            numero2 = 'F';
+            const serie = [8, 22, 23, 24, 36, 37, 38, 39, 40, 50, 51, 52, 53, 54, 55, 56, 64, 65, 66, 67, 
+                            68, 69, 70, 71, 72, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 92, 93, 94, 95, 96, 97, 98, 99,
+                            100, 101, 102, 103, 104, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+                            127, 128, 129, 142, 143, 144, 157, 158, 159, 172, 173, 174, 187, 188, 189, 202, 203, 204];
 
-            var f = [8, 22, 23, 24, 36, 37, 38, 39, 40, 50, 51, 52, 53, 54, 55, 56, 64, 65, 66, 67, 68, 69, 70, 71, 72, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 92, 93, 94, 95, 96, 97, 98, 99,
-                100, 101, 102, 103, 104, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 127, 128, 129, 142, 143, 144, 157, 158, 159, 172, 173, 174, 187, 188, 189, 202, 203, 204];
-
-            cantidad2 = numero2.length;
-
+            cant2 = num2.length;
             for (var i = 1; i <= 14; i++) {
-                for (var a = 1; a <= cantidad2 * 16; a++) {
+                for (var a = 1; a <= cant2 * 16; a++) {
                     n2 = parseInt((a - 1) / 16);
 
-                    arreglo2 = convertir2(numero2[n2]);
+                    arreglo2 = cnv2(num2[n2]);
 
                     if (a % 16 === 0) {
-                        document.write("&nbsp;&nbsp;");
+                        kill("&nbsp;&nbsp;");
                         continue;
                     }
                     if (a > 16) {
@@ -53,84 +70,68 @@
                         b = a;
                     }
                     if (arreglo2.includes(15 * (i - 1) + b)) {
-                        document.write("x");
+                        kill("⁑");
                     } else {
-                        document.write("&nbsp;&nbsp;");
+                        kill("&nbsp;&nbsp;");
                     }
                 }
-                document.write("<br>");
+                kill('<br>');
             }
 
-            function convertir2(numeroc2) {
-                switch (numeroc2) {
+            function cnv2(number2) {
+                switch (number2) {
                     case "F":
-                        return f;
+                        return serie;
                         break;
                     default:
                         return "0";
                 }
             }
+
+            function kill(txt){
+                document.write(txt)
+            }
         </script>
     </div>
 
-    <div id="texto">
+    <div class="partB">
         <script>
-            var numero = "1234567890"; 
-            var cantidad = numero.length;
+            let numero = "1234567890"; 
+            let cantidad = numero.length;
 
-            var uno = [1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 16, 21, 31, 35, 36, 37, 40, 41, 43, 45, 46, 49, 50, 51, 55];
-            var dos = [1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25, 31, 32, 33, 34, 35, 36, 40, 41, 42, 43, 44, 45, 46, 50, 51, 55];
-            var tres = [1, 6, 11, 16, 21, 22, 23, 24, 25, 31, 35, 36, 40, 42, 44, 47, 49, 53];
-            var cuatro = [1, 2, 3, 4, 5, 8, 13, 18, 21, 22, 23, 24, 25, 31, 32, 33, 34, 35, 38, 43, 48, 51, 52, 53, 54, 55];
-            var cinco = [1, 2, 3, 4, 5, 9, 13, 17, 21, 22, 23, 24, 25, 31, 32, 33, 34, 36, 40, 41, 45, 46, 50, 51, 52, 53, 54];
-            var seis = [31, 32, 33, 34, 35, 36, 40, 41, 42, 43, 44, 45, 46, 50, 51, 55];
-            var siete = [2, 3, 4, 6, 10, 14, 18, 21, 22, 23, 24, 25, 31, 32, 33, 34, 36, 40, 41, 45, 46, 50, 51, 52, 53, 54];
-            var ocho = [1, 2, 3, 4, 5, 6, 10, 11, 15, 16, 20, 21, 22, 23, 24, 25];
-            var nueve = [2, 3, 4, 6, 10, 14, 18, 21, 22, 23, 24, 25];
-            var cero = [4, 5, 8, 10, 12, 15, 16, 17, 18, 19, 20, 25];
+            const uno = [1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 16, 21, 31, 35, 36, 37, 40, 41, 43, 45, 46, 49, 50, 51, 55];
+            const dos = [1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25, 31, 32, 33, 34, 35, 36, 40, 41, 42, 43, 44, 45, 46, 50, 51, 55];
+            const tres = [1, 6, 11, 16, 21, 22, 23, 24, 25, 31, 35, 36, 40, 42, 44, 47, 49, 53];
+            const cuatro = [1, 2, 3, 4, 5, 8, 13, 18, 21, 22, 23, 24, 25, 31, 32, 33, 34, 35, 38, 43, 48, 51, 52, 53, 54, 55];
+            const cinco = [1, 2, 3, 4, 5, 9, 13, 17, 21, 22, 23, 24, 25, 31, 32, 33, 34, 36, 40, 41, 45, 46, 50, 51, 52, 53, 54];
+            const seis = [31, 32, 33, 34, 35, 36, 40, 41, 42, 43, 44, 45, 46, 50, 51, 55];
+            const siete = [2, 3, 4, 6, 10, 14, 18, 21, 22, 23, 24, 25, 31, 32, 33, 34, 36, 40, 41, 45, 46, 50, 51, 52, 53, 54];
+            const ocho = [1, 2, 3, 4, 5, 6, 10, 11, 15, 16, 20, 21, 22, 23, 24, 25];
+            const nueve = [2, 3, 4, 6, 10, 14, 18, 21, 22, 23, 24, 25];
+            const cero = [4, 5, 8, 10, 12, 15, 16, 17, 18, 19, 20, 25];
 
-            for (var x = 1; x <= 11; x++) {
-                for (var y = 1; y <= cantidad * 6; y++) {
-                    var n = parseInt((y - 1) / 6);
+            for (let x = 1; x <= 11; x++) {
+                for (let y = 1; y <= cantidad * 6; y++) {
+                    let n = parseInt((y - 1) / 6);
 
-                    var arreglo;
+                    let array;
                     switch (numero[n]) {
-                        case "1":
-                            arreglo = uno;
-                            break;
-                        case "2":
-                            arreglo = dos;
-                            break;
-                        case "3":
-                            arreglo = tres;
-                            break;
-                        case "4":
-                            arreglo = cuatro;
-                            break;
-                        case "5":
-                            arreglo = cinco;
-                            break;
-                        case "6":
-                            arreglo = seis;
-                            break;
-                        case "7":
-                            arreglo = siete;
-                            break;
-                        case "8":
-                            arreglo = ocho;
-                            break;
-                        case "9":
-                            arreglo = nueve;
-                            break;
-                        case "0":
-                            arreglo = cero;
-                            break;
+                        case "1": array = uno; break;
+                        case "2": array = dos; break;
+                        case "3": array = tres; break;
+                        case "4": array = cuatro; break;
+                        case "5": array = cinco; break;
+                        case "6": array = seis; break;
+                        case "7": array = siete; break;
+                        case "8": array = ocho; break;
+                        case "9": array = nueve; break;
+                        case "0": array = cero; break;
                         default:
-                            arreglo = [];
+                            array = [];
                     }
 
                     if (y % 6 === 0) {
-                        document.write("&nbsp;&nbsp;");
+                        kill("&nbsp;&nbsp;");
                         continue;
                     }
                     if (y > 6) {
@@ -138,16 +139,26 @@
                     } else {
                         z = y;
                     }
-                    if (arreglo.includes(5 * (x - 1) + z)) {
-                        document.write("x");
+
+                    if (array.includes(5 * (x - 1) + z)) {
+                        kill("⁑");
                     } else {
-                        document.write("&nbsp;&nbsp;");
+                        kill("&nbsp;&nbsp;");
                     }
                 }
-                document.write("<br>");
+                kill("<br>");
             }
+
+
+            function kill(txt){
+                document.write(txt)
+            }
+            // byZerojLabs
         </script>
     </div>
+    
+    
+</div>
 
 </body>
 
