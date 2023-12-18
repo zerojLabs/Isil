@@ -6,6 +6,9 @@
     <title>CodeX -Python</title>
     <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/python.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
@@ -17,157 +20,472 @@
 
     <nav>
         <a href="../index.html">Inicio</a>
-        <a href="#conceptos">Conceptos Básicos</a>
+        <a href="#introduccion">Conceptos Básicos</a>
         <a href="#data-structures">Estructuras de Datos</a>
         <a href="#advanced">Conceptos Avanzados</a>
-        <a href="#modules">Módulos Populares</a>
-        <a href="#examples">Ejemplos</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#modules">Módulos y Frametworks</a>
     </nav>
 
     <main>
 
         <!-- Conceptos Básicos Section -->
-        <section id="conceptos">
-            <h2>Conceptos Básicos</h2>
-            <article>
-                <h3>Sintaxis Sencilla</h3>
-                <p>Python se destaca por su sintaxis clara y concisa. Su diseño hace que sea fácil leer y escribir código, lo que facilita su aprendizaje para principiantes.</p>
-
-                <h3>Tipos de Datos</h3>
-                <p>Python incluye varios tipos de datos:</p>
-                <ul>
-                    <li><strong>Enteros:</strong> Números enteros, como 42.</li>
-                    <li><strong>Flotantes:</strong> Números decimales, como 3.14.</li>
-                    <li><strong>Cadenas:</strong> Secuencias de caracteres, como "Hola, Mundo!".</li>
-                    <li><strong>Listas:</strong> Colecciones ordenadas de elementos.</li>
-                    <li><strong>Diccionarios:</strong> Colecciones de pares clave-valor.</li>
-                </ul>
-
-                <h3>Estructuras de Control</h3>
-                <p>Python soporta estructuras de control como condicionales (if, else) y bucles (for, while), proporcionando herramientas poderosas para la creación de programas.</p>
-
-                <h3>Funciones</h3>
-                <p>Las funciones en Python permiten encapsular bloques de código para su reutilización. Se definen con la palabra clave <code>def</code>.</p>
-
-                <h3>Clases y Objetos</h3>
-                <p>Python es un lenguaje orientado a objetos. Las clases y objetos son fundamentales para la programación orientada a objetos.</p>
-            </article>
+        <section id="introduccion">
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Introduccion</h2><br>
+                        <p>Python se destaca por su sintaxis clara y concisa. Su diseño hace que sea fácil leer y escribir código, lo que facilita su aprendizaje para principiantes.</p>
+                    </article>
+                </div>
+                <div class="col-md-3 text-left text-center">
+                </div>
+                    <!-- Ejemplos de Código Section -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="../img/python/comentarios.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="../img/python/print.png" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/python/variablesPython.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/python/condiciones.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/python/bucles.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/python/funciones.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
         </section>
 
-        <!-- Ejemplos de Código Section -->
-        <section id="ejemplos">
-            <h2>Ejemplos de Código</h2>
-            <article>
-                <h3>Hola, Mundo!</h3>
-                <div class="codigo-ejemplo">
-                    <pre><code>
-print("Hola, Mundo!")
-                    </code></pre>
-                </div>
 
-                <h3>Bucle For</h3>
-                <div class="codigo-ejemplo">
-                    <pre><code>
-for i in range(5):
-    print(i)
-                    </code></pre>
+
+        <section>
+            <!-- tipos de datos -->
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="card mb-2" style="max-width: 600px;">
+                        <div class="row g-0">
+                        <div class="col-md-8">
+                            <img src="../img/python/tiposDatos.png" class="img-fluid h-100 rounded-start" alt="tipos de datos">
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center text-center">
+                            <div class="card-body text-start">
+                            <h5 class="card-title">Tipos de datos básicos</h5>
+                            <br>
+                            <p class="card-text">&check; Numericos</p>
+                            <p class="card-text">&check; Punto Flotante</p>
+                            <p class="card-text">&check; Texto</p>
+                            <p class="card-text">&check; Boleanos</p>
+                            <br><br>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
+            
+                <div class="col-md-6 text-center">
+                  <div class="card mb-2" style="max-width: 600px;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <img src="../img/python/operadores.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-4 d-flex align-items-center text-center">
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Operadores</h5>
+                          <br>
+                          <p class="card-text">&check; Suma +</p>
+                          <p class="card-text">&check; Resta -</p>
+                          <p class="card-text">&check; Multiplicación *</p>
+                          <p class="card-text">&check; División /</p>
+                          <p class="card-text">&check; Modulo %</p>
+                          <p class="card-text">&check; Potencia **</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
         </section>
 
-        <!-- Data Structures Section -->
+         <!-- ===================================================================================================================== -->
+
+
+        <!-- Estructuras de control if, else, while, for -->
         <section id="data-structures">
-            <h2>Estructuras de Datos en Python</h2>
-            <p>Python proporciona diversas estructuras de datos para manejar información de manera eficiente.</p>
-            <h3>Listas</h3>
-            <code>
-                numeros = [1, 2, 3, 4, 5]
-                </code>
-            <h3>Diccionarios</h3>
-            <code>
-                estudiante = {'nombre': 'Juan', 'edad': 25, 'curso': 'Python'}
-                </code>
-            <!-- Puedes agregar más ejemplos de estructuras de datos -->
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Estructuras de Control</h2><br>
+                        <p>Permiten a los programadores tomar decisiones y repetir tareas. 
+                            Las dos principales categorías de estructuras de control son las condicionales y los bucles.</p>
+                    </article>
+                </div>
+                
+                <div class="col-md-3 text-left text-center">
+                </div>
+                    <!-- Ejemplos de Código Section -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/if-else.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../img/if-else2.png"" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+            
+
+
+            <div class="row">
+                <div class="col">
+                    <br><br><br>
+                </div>
+            </div>
+
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col d-flex align-items-center text-center">
+                  <div class="card h-100">
+                    <img src="../img/python/if-else.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <br>
+                      <h5 class="card-title">If - Else</h5>
+                      <p class="card-text"> La estructura condicional if permite ejecutar un bloque de código si una condición es verdadera.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 text-left text-center"></div>
+    
+                <div class="col d-flex align-items-center text-center">
+                  <div class="card h-100">
+                    <img src="../img/python/elif.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <br>
+                      <h5 class="card-title">If - Elif - Else</h5>
+                      <p class="card-text">La cláusula elif (else if) permite evaluar condiciones adicionales 
+                            y una cláusula else para manejar el caso en que ninguna de las condiciones anteriores sea verdadera.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
 
-        <!-- Advanced Section -->
+
+        <!-- ===================================================================================================================== -->
+
+        <!-- bucles e interaciones -->
+        <section id="bucles">
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <!-- Ejemplos de Código Section -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/for.jpg" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="8000">
+                                <img src="../img/while.gif" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 d-flex align-items-center">
+                    <article class="text-center">
+                        <h2>Bucles</h2><br>
+                        <p>Estructuras de control de flujo en programación que permiten 
+                            ejecutar un bloque de código de manera repetida.</p>
+                    </article>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <br><br><br>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/while.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">While</h5>
+                          <p class="card-text">Se utiliza cuando no se conoce de antemano cuántas iteraciones serán necesarias y se ejecutará mientras una condición sea verdadera.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/for.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">For</h5>
+                          <p class="card-text">Se utiliza cuando se conoce la cantidad exacta de iteraciones que se deben realizar.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/break.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Break</h5>
+                          <p class="card-text">Se utiliza para salir inmediatamente de un bucle.</p>
+                          <p class="card-text">Cuando se encuentra la palabra clave break dentro de un bucle (for o while), el bucle se interrumpe y el control del programa pasa a la siguiente instrucción después del bucle.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/continue.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Continue</h5>
+                          <p class="card-text">Se utiliza para pasar a la siguiente iteración del bucle sin ejecutar el resto del código dentro del bucle.</p>
+                          <P class="card-text">Cuando se encuentra la palabra clave continue, el control del programa vuelve al principio del bucle para la siguiente iteración</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+
+         <!-- ===================================================================================================================== -->
+
+        <!-- Funciones -->
         <section id="advanced">
-            <h2>Conceptos Avanzados</h2>
-            <p>A medida que te vuelves más familiarizado con Python, puedes explorar conceptos avanzados como funciones, clases, y manipulación de archivos.</p>
-            <h3>Funciones</h3>
-            <code>
-                def saludar(nombre):
-                    print(f"Hola, {nombre}!")
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Funciones</h2><br>
+                        <p>Es un bloque de código reutilizable que realiza una tarea específica. Las funciones permiten organizar y estructurar el código al dividirlo en piezas más pequeñas y manejables. 
+                            Esto facilita la comprensión del código, promueve la reutilización y facilita el mantenimiento.</p>
+                    </article>
+                </div>
+                
+                <div class="col-md-3 text-left text-center">
+                </div>
+                    <!-- Ejemplos de Código Section -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/python/funciones2.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../img/python/funciones3.jpg"" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
 
-                saludar("Juan")
-            </code>
-            <h3>Clases</h3>
-            <code>
-                class Rectangulo:
-                    def __init__(self, largo, ancho):
-                        self.largo = largo
-                        self.ancho = ancho
+                <div class="row">
+                    <div class="col">
+                        <br><br><br>
+                    </div>
+                </div>
 
-                    def calcular_area(self):
-                        return self.largo * self.ancho
-                </code>
-            <h3>Manejo de Excepciones</h3>
-            <code>
-                try:
-                    resultado = 10 / 0
-                except ZeroDivisionError:
-                    print("No puedes dividir entre cero.")
-                </code>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/def.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Definición y Llamada</h5>
+                          <p class="card-text">Para definir una función en Python, se utiliza la palabra clave def, seguida del nombre de la función y paréntesis que pueden contener parámetros.</p>
+                        <p class="card-text">Para ejecutar o "llamar" una función, simplemente se utiliza su nombre seguido de paréntesis.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/def2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Parametros y Argumentos</h5>
+                          <p class="card-text">Las funciones pueden aceptar parámetros, que son valores que la función utiliza durante su ejecución.</p>
+                          <p class="card-text">Los argumentos son los valores reales que se pasan a la función cuando se llama.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/def3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Valor de Retorno</h5>
+                          <p class="card-text">Una función puede devolver un valor utilizando la palabra clave return.</p>
+                          <P class="card-text">Esto permite que el resultado de la función se utilice en otras partes del programa.</P>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/python/def4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ámbito de Variables</h5>
+                          <p class="card-text">Las variables definidas dentro de una función tienen un ámbito local.</p>
+                          <P class="card-text">Lo que significa que solo son accesibles dentro de esa función. Solo las variables fuera de la función tienen un ámbito global.</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </section>
 
-        <!-- Modules Section -->
+
         <section id="modules">
-            <h2>Módulos Populares de Python</h2>
-            <p>Python tiene una amplia variedad de módulos que extienden su funcionalidad. Aquí hay algunos populares:</p>
-            <ul>
-                <li><strong>NumPy:</strong> Manipulación de arreglos y operaciones matemáticas.</li>
-                <li><strong>Pandas:</strong> Análisis de datos y manipulación.</li>
-                <li><strong>Matplotlib:</strong> Visualización de datos.</li>
-            </ul>
+            <!-- Modulo y Frametworks -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <h4>Frametworks y Módulos</h4>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/python/tensorflow.jpg" class="d-block mx-auto img-fluid" alt="tensorflow">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 class="text-dark">Aprendizaje automático e inteligencia artificial.</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/python/django.jpg" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="text-dark">Desarrollo Web.</h4>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/python/flask.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/python/pandas.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">>
+                        <h4 class="text-dark">Manejo y análisis de datos.</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/python/numpy.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption text-end text-center d-md-block">>
+                        <h4 class="text-dark"> Cálculos matemáticos y científicos.</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/python/fastApi.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="text-dark">Construcción de APIs de forma sencilla y rápida</h4>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
         </section>
 
-        <!-- Examples Section -->
-        <section id="examples">
-            <h2>Ejemplos de Código</h2>
-            <h3>Iteradores y Comprehension</h3>
-            <code>
-                numeros = [1, 2, 3, 4, 5]
-                cuadrados = [x**2 for x in numeros]
-                print(cuadrados)
-            </code>
-            <h3>Operaciones con Archivos</h3>
-            <code>
-                with open("archivo.txt", "r") as archivo:
-                    contenido = archivo.read()
-                    print(contenido)
-                </code>
-            <!-- Agrega más ejemplos según lo que desees incluir -->
-        </section>
-
-
-        <!-- Recursos Section -->
-        <section id="recursos">
-            <h2>Recursos</h2>
-            <article>
-                <h3>Documentación Oficial</h3>
-                <p>La <a href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer">documentación oficial de Python</a> es un recurso invaluable para aprender más sobre el lenguaje y sus características.</p>
-
-                <h3>Comunidades en línea</h3>
-                <p>Participar en comunidades en línea como <a href="https://stackoverflow.com/questions/tagged/python" target="_blank" rel="noopener noreferrer">Stack Overflow</a> puede proporcionar respuestas a preguntas específicas y fomentar la interacción con otros programadores.</p>
-            </article>
-        </section>
-
-
+    
     </main>
 
-    <footer>
-        <p>&copy; 2023 Python Lenguaje de Programación</p>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Fuentes Oficiales</h65>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.python.org/" target="_blank" class="text-light fs-6"><p></p>Página oficial de Python</a></li>
+                        <li><a href="https://docs.python.org/" target="_blank" class="text-light fs-6">Documentación oficial</a></li>
+                        <li><a href="https://dev.to/c/python" target="_blank" class="text-light fs-6">DEV Community - Python</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Sitios Recomendados</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://realpython.com/" target="_blank" class="text-light">Real Python</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank" class="text-light">GeeksforGeeks - Python</a></li>
+                        <li><a href="https://www.djangoproject.com/" target="_blank" class="text-light">Django - Framework web en Python</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Comunidades</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://stackoverflow.com/questions/tagged/python" target="_blank" class="text-light">Stack Overflow - Python</a></li>
+                        <li><a href="https://reddit.com/r/Python" target="_blank" class="text-light">Reddit - r/Python</a></li>
+                        <li><a href="https://www.pythonanywhere.com/forums/" target="_blank" class="text-light">PythonAnywhere Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">&copy; 2023 byZerojLabs</p>
+                    <p class="mb-1">Email: ZerojLabs@python.com</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-2">Descubre más sobre Python y mejora tus habilidades de programación.</p>
+                <a href="#top" class="btn btn-outline-light">Inicio</a>
+            </div>
+        </div>
     </footer>
+    
+    
 </body>
 </html>
