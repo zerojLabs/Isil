@@ -3,105 +3,493 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeX -C#</title>
+    <title>CodeX -Python</title>
     <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/csharp.css">
+    <link rel="stylesheet" href="../estilos/python.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    
     <header>
-        <img src="../img/CSharp.png" width="100px" height="100px" alt="c#">
-        <h1>C Sharp</h1>
-        <p>Explora el lenguaje de programación C# y sus aplicaciones en el desarrollo de software.</p>
+        <div><img src="../img/CSharp.png" width="120px" height="120px" alt="python"></div>
+        <div><h1>Java</h1></div>
+        <div><p>Explora las maravillas de Python, desde las bases hasta conceptos avanzados.</p></div>
     </header>
 
     <nav>
-        <a href="../index.html">Inicio</a> |
-        <a href="#introduccion">Introducción</a> |
-        <a href="#caracteristicas">Características</a> |
-        <a href="#ejemplos">Ejemplos de Código</a> |
-        <a href="#frameworks">Frameworks</a>
+        <a href="../index.html">Inicio</a>
+        <a href="#introduccion">Conceptos Básicos</a>
+        <a href="#data-structures">Estructuras de Datos</a>
+        <a href="#advanced">Conceptos Avanzados</a>
+        <a href="#modules">Módulos y Frametworks</a>
     </nav>
 
     <main>
-        <!-- Introducción Section -->
+
+
+        <!-- ==========================================================================================
+        <!-- Conceptos Básicos Section -->
         <section id="introduccion">
-            <h2>Introducción</h2>
-            <article>
-                <p>C# (pronunciado "C sharp") es un lenguaje de programación moderno desarrollado por Microsoft. Fue diseñado para ser simple, eficiente y seguro.</p>
-                <p>En esta sección, exploraremos los principios básicos de C# y su aplicación en el desarrollo de software.</p>
-            </article>
-        </section>
-
-        <!-- Características Section -->
-        <section id="caracteristicas">
-            <h2>Características</h2>
-            <article>
-                <h3>Orientado a Objetos</h3>
-                <p>C# es un lenguaje orientado a objetos, lo que significa que se basa en la concepto de objetos, que pueden contener datos en forma de campos (atributos) y código en forma de procedimientos (métodos).</p>
-
-                <h3>Tipado Fuerte</h3>
-                <p>En C#, las variables deben declararse con un tipo específico y no se pueden cambiar después de la declaración. Esto se conoce como tipado fuerte y ayuda a prevenir errores en tiempo de ejecución.</p>
-
-                <!-- Agrega más características según sea necesario -->
-
-                <h3>Programación Asíncrona</h3>
-                <p>C# ofrece soporte para programación asíncrona mediante la palabra clave `async` y `await`, permitiendo la ejecución de tareas sin bloquear el hilo principal.</p>
-            </article>
-        </section>
-
-        <!-- Ejemplos de Código Section -->
-        <section id="ejemplos">
-            <h2>Ejemplos de Código</h2>
-            <article>
-                <h3>Hola, Mundo!</h3>
-                <div class="codigo-ejemplo">
-                    <pre><code>
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Hola, Mundo!");
-    }
-}
-                    </code></pre>
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Introduccion</h2><br>
+                        <p>Java destaca por su sintaxis clara y accesible, facilitando la lectura y escritura de código, ideal para quienes recién empiezan.</p>
+                    </article>
+                </div>
+                <div class="col-md-3 text-left text-center">
                 </div>
 
-                <h3>Clase y Objeto</h3>
-                <div class="codigo-ejemplo">
-                    <pre><code>
-class Persona
-{
-    public string Nombre { get; set; }
-    public int Edad { get; set; }
-}
-
-// Crear un objeto Persona
-Persona persona1 = new Persona();
-persona1.Nombre = "John Doe";
-persona1.Edad = 30;
-                    </code></pre>
+                <!-- carrusel de imagenes -->
+                    <!-- Ejemplos de Código Section -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="../img/cSharp/comentarios.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="../img/cSharp/print.png" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/cSharp/variables.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/cSharp/condiciones.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/cSharp/bucles.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/cSharp/funciones.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-            </article>
+            </div>    
         </section>
 
-        <!-- Frameworks Section -->
-        <section id="frameworks">
-            <h2>Frameworks</h2>
-            <article>
-                <h3>ASP.NET</h3>
-                <p>ASP.NET es un marco de desarrollo web de C# utilizado para construir aplicaciones web modernas y escalables.</p>
 
-                <h3>Xamarin</h3>
-                <p>Xamarin permite el desarrollo de aplicaciones móviles multiplataforma utilizando C# y .NET, compartiendo código entre iOS y Android.</p>
-            </article>
+        <section>
+            <!-- tipos de datos -->
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="card mb-2" style="max-width: 600px;">
+                        <div class="row g-0">
+                        <div class="col-md-8">
+                            <img src="../img/cSharp/tiposDatos.png" class="img-fluid h-100 rounded-start" alt="tipos de datos">
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center text-center">
+                            <div class="card-body text-start">
+                            <h5 class="card-title">Tipos de datos básicos</h5>
+                            <br>
+                            <p class="card-text">&check; Numericos</p>
+                            <p class="card-text">&check; Punto Flotante</p>
+                            <p class="card-text">&check; Texto</p>
+                            <p class="card-text">&check; Boleanos</p>
+                            <br><br>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-6 text-center">
+                  <div class="card mb-2" style="max-width: 600px;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <img src="../img/cSharp/operadores.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-4 d-flex align-items-center text-center">
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Operadores</h5>
+                          <br>
+                          <p class="card-text">&check; Suma +</p>
+                          <p class="card-text">&check; Resta -</p>
+                          <p class="card-text">&check; Multiplicación *</p>
+                          <p class="card-text">&check; División /</p>
+                          <p class="card-text">&check; Modulo %</p>
+                          <p class="card-text">&check; Potencia **</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
         </section>
+
+         <!-- ===================================================================================================================== -->
+
+
+        <!-- Estructuras de control if, else, while, for -->
+        <section id="data-structures">
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Estructuras de Control</h2><br>
+                        <p>Permiten a los programadores tomar decisiones y repetir tareas. 
+                            Las dos principales categorías de estructuras de control son las condicionales y los bucles.</p>
+                    </article>
+                </div>
+                
+                <div class="col-md-3 text-left text-center">
+                </div>
+                    <!-- Carrusel -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/if-else.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../img/if-else2.png"" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+            
+
+
+            <div class="row">
+                <div class="col">
+                    <br><br><br>
+                </div>
+            </div>
+
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col d-flex align-items-center text-center">
+                  <div class="card h-100">
+                    <img src="../img/cSharp/condiciones.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <br>
+                      <h5 class="card-title">If - Else</h5>
+                      <p class="card-text"> La estructura condicional if permite ejecutar un bloque de código si una condición es verdadera.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 text-left text-center"></div>
+    
+                <div class="col d-flex align-items-center text-center">
+                  <div class="card h-100">
+                    <img src="../img/cSharp/elif.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <br>
+                      <h5 class="card-title">If - Else if - Else</h5>
+                      <p class="card-text">La cláusula elif (else if) permite evaluar condiciones adicionales 
+                            y una cláusula else para manejar el caso en que ninguna de las condiciones anteriores sea verdadera.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+
+        <!-- ===================================================================================================================== -->
+
+        <!-- bucles e interaciones -->
+        <section id="bucles">
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <!-- Ejemplos de Código Section -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/for.jpg" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="8000">
+                                <img src="../img/while.gif" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 d-flex align-items-center">
+                    <article class="text-center">
+                        <h2>Bucles</h2><br>
+                        <p>Estructuras de control de flujo en programación que permiten 
+                            ejecutar un bloque de código de manera repetida.</p>
+                    </article>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <br><br><br>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/while.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">While</h5>
+                          <p class="card-text">Se utiliza cuando no se conoce de antemano cuántas iteraciones serán necesarias y se ejecutará mientras una condición sea verdadera.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/for.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">For</h5>
+                          <p class="card-text">Se utiliza cuando se conoce la cantidad exacta de iteraciones que se deben realizar.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/break.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Break</h5>
+                          <p class="card-text">Se utiliza para salir inmediatamente de un bucle.</p>
+                          <p class="card-text">Cuando se encuentra la palabra clave break dentro de un bucle (for o while), el bucle se interrumpe y el control del programa pasa a la siguiente instrucción después del bucle.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/continue.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Continue</h5>
+                          <p class="card-text">Se utiliza para pasar a la siguiente iteración del bucle sin ejecutar el resto del código dentro del bucle.</p>
+                          <P class="card-text">Cuando se encuentra la palabra clave continue, el control del programa vuelve al principio del bucle para la siguiente iteración</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+
+         <!-- ===================================================================================================================== -->
+
+        <!-- Funciones -->
+        <section id="advanced">
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Funciones</h2><br>
+                        <p>Es un bloque de código reutilizable que realiza una tarea específica. Las funciones permiten organizar y estructurar el código al dividirlo en piezas más pequeñas y manejables. 
+                            Esto facilita la comprensión del código, promueve la reutilización y facilita el mantenimiento.</p>
+                    </article>
+                </div>
+                
+                <div class="col-md-3 text-left text-center">
+                </div>
+                    <!-- Ejemplos de Código Section -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/python/funciones2.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../img/python/funciones3.jpg"" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+
+                <div class="row">
+                    <div class="col">
+                        <br><br><br>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/def.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Definición y Llamada</h5>
+                          <p class="card-text">Para definir una función en Python, se utiliza la palabra clave def, seguida del nombre de la función y paréntesis que pueden contener parámetros.</p>
+                        <p class="card-text">Para ejecutar o "llamar" una función, simplemente se utiliza su nombre seguido de paréntesis.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/def2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Parametros y Argumentos</h5>
+                          <p class="card-text">Las funciones pueden aceptar parámetros, que son valores que la función utiliza durante su ejecución.</p>
+                          <p class="card-text">Los argumentos son los valores reales que se pasan a la función cuando se llama.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/def3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Valor de Retorno</h5>
+                          <p class="card-text">Una función puede devolver un valor utilizando la palabra clave return.</p>
+                          <P class="card-text">Esto permite que el resultado de la función se utilice en otras partes del programa.</P>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/cSharp/def4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ámbito de Variables</h5>
+                          <p class="card-text">Las variables definidas dentro de una función tienen un ámbito local.</p>
+                          <P class="card-text">Lo que significa que solo son accesibles dentro de esa función. Solo las variables fuera de la función tienen un ámbito global.</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+
+        <section id="modules">
+            <!-- Modulo y Frametworks -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <h4>Frameworks y Módulos</h4>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/cSharp/blazor.png" class="d-block mx-auto img-fluid" alt="tensorflow">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3 class="text-dark">Aprendizaje automático e inteligencia artificial.</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/cSharp/signal.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="text-dark">Desarrollo Web.</h4>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/cSharp/net.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/cSharp/entity.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">>
+                        <h4 class="text-dark">Manejo y análisis de datos.</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/cSharp/nuget.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption text-end text-center d-md-block">>
+                        <h4 class="text-dark"> Cálculos matemáticos y científicos.</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/cSharp/xamarin.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="text-dark">Construcción de APIs de forma sencilla y rápida</h4>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+        </section>
+
+    
     </main>
 
-    <footer>
-        <p>&copy; 2023 C# - Codex</p>
-    </footer><header>
 
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Fuentes Oficiales</h65>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.java.com/es/" target="_blank" class="text-light fs-6"><p></p>Página oficial de Java</a></li>
+                        <li><a href="https://docs.oracle.com/en/java/" target="_blank" class="text-light fs-6">Documentación oficial</a></li>
+                        <li><a href="https://www.oracle.com/java/technologies/community-glance.html" target="_blank" class="text-light fs-6">SE Community - Java</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Sitios Recomendados</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.codecademy.com/learn/learn-java" target="_blank" class="text-light">Codecademy - Java</a></li>
+                        <li><a href="https://www.learnjavaonline.org/" target="_blank" class="text-light">Learnjavaonline</a></li>
+                        <li><a href="https://tomcat.apache.org/" target="_blank" class="text-light">Apache Tomcat</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Comunidades</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://stackoverflow.com/questions/tagged/java" target="_blank" class="text-light">Stack Overflow - Java</a></li>
+                        <li><a href="https://www.reddit.com/r/java" target="_blank" class="text-light">Reddit - r/Java</a></li>
+                        <li><a href="https://www.pythonanywhere.com/forums/" target="_blank" class="text-light">PythonAnywhere Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">&copy; 2023 byZerojLabs</p>
+                    <p class="mb-1">Email: ZerojLabs@python.com</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-2">Descubre más sobre Java y mejora tus habilidades de programación.</p>
+                <br>
+                <a href="#top" class="btn btn-outline-light">Inicio</a>
+            </div>
+        </div>
+    </footer>
+    
+    
 </body>
 </html>
