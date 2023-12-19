@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeX -Python</title>
+    <title>CodeX - C#</title>
     <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/python.css">
+    <link rel="stylesheet" href="../estilos/csharp.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -13,18 +13,36 @@
 <body>
     
     <header>
-        <div><img src="../img/CSharp.png" width="120px" height="120px" alt="python"></div>
-        <div><h1>Java</h1></div>
-        <div><p>Explora las maravillas de Python, desde las bases hasta conceptos avanzados.</p></div>
+        <div><img src="../img/CSharp.png" width="70px" height="70px" alt="python"></div>
+        <div><h1></h1></div>
+        <div><p>Conozca del lenguage multipropósito creado por Microsoft.</p></div>
     </header>
 
     <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="#introduccion">Conceptos Básicos</a>
-        <a href="#data-structures">Estructuras de Datos</a>
-        <a href="#advanced">Conceptos Avanzados</a>
-        <a href="#modules">Módulos y Frametworks</a>
-    </nav>
+      <div class="row">
+          <div class="col-md-1 text-start">
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                C#
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="../pages/cplusplus.html">C++</a></li>
+                <li><a class="dropdown-item" href="../pages/kotlin.html">Kotlin</a></li>
+                <li><a class="dropdown-item" href="../pages/java.html">Java</a></li>
+                <li><a class="dropdown-item" href="../pages/javascript.html">JavaScript</a></li>
+                <li><a class="dropdown-item" href="../pages/python.html">Python</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="col-md-11 text-center">
+          <a href="../index.html">Inicio</a>
+          <a href="#introduccion">Conceptos Básicos</a>
+          <a href="#data-structures">Estructuras de Datos</a>
+          <a href="#advanced">Conceptos Avanzados</a>
+          <a href="#modules">Módulos y Frameworks</a>
+        </div>
+    </div>
+  </nav>
 
     <main>
 
@@ -35,8 +53,8 @@
             <div class="row my-4">
                 <div class="col-md-4 d-flex align-items-center text-center">
                     <article>
-                        <h2>Introduccion</h2><br>
-                        <p>Java destaca por su sintaxis clara y accesible, facilitando la lectura y escritura de código, ideal para quienes recién empiezan.</p>
+                        <h2>C Sharp</h2><br>
+                        <p>Un lenguaje de programación versátil y potente diseñado para el desarrollo de aplicaciones modernas en la plataforma .NET.</p>
                     </article>
                 </div>
                 <div class="col-md-3 text-left text-center">
@@ -268,21 +286,21 @@
                     </div>
                     <div class="col d-flex align-items-center text-center">
                       <div class="card h-100">
-                        <img src="../img/cSharp/break.png" class="card-img-top" alt="...">
+                        <img src="../img/cSharp/dowhile.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Break</h5>
-                          <p class="card-text">Se utiliza para salir inmediatamente de un bucle.</p>
-                          <p class="card-text">Cuando se encuentra la palabra clave break dentro de un bucle (for o while), el bucle se interrumpe y el control del programa pasa a la siguiente instrucción después del bucle.</p>
+                          <h5 class="card-title">Do-While</h5>
+                          <p class="card-text">Permite ejecutar un bloque de código al menos una vez.</p>
+                          <p class="card-text">Luego repite la ejecución mientras una condición especificada sea verdadera.</p>
                         </div>
                       </div>
                     </div>
                     <div class="col d-flex align-items-center text-center">
                       <div class="card h-100">
-                        <img src="../img/cSharp/continue.png" class="card-img-top" alt="...">
+                        <img src="../img/cSharp/foreach.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Continue</h5>
-                          <p class="card-text">Se utiliza para pasar a la siguiente iteración del bucle sin ejecutar el resto del código dentro del bucle.</p>
-                          <P class="card-text">Cuando se encuentra la palabra clave continue, el control del programa vuelve al principio del bucle para la siguiente iteración</P>
+                          <h5 class="card-title">ForEach</h5>
+                          <p class="card-text">Permite iterar a través de los elementos de una colección.</p>
+                          <P class="card-text">Como un array o una lista, sin necesidad de conocer la longitud de la colección.</P>
                         </div>
                       </div>
                     </div>
@@ -398,14 +416,11 @@
                   <div class="carousel-item active">
                     <img src="../img/cSharp/blazor.png" class="d-block mx-auto img-fluid" alt="tensorflow">
                     <div class="carousel-caption d-none d-md-block">
-                      <h3 class="text-dark">Aprendizaje automático e inteligencia artificial.</h3>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../img/cSharp/signal.png" class="d-block mx-auto img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h4 class="text-dark">Desarrollo Web.</h4>
-
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -416,19 +431,16 @@
                   <div class="carousel-item">
                     <img src="../img/cSharp/entity.png" class="d-block mx-auto img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">>
-                        <h4 class="text-dark">Manejo y análisis de datos.</h4>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../img/cSharp/nuget.png" class="d-block mx-auto img-fluid" alt="...">
                     <div class="carousel-caption text-end text-center d-md-block">>
-                        <h4 class="text-dark"> Cálculos matemáticos y científicos.</h4>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../img/cSharp/xamarin.png" class="d-block mx-auto img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h4 class="text-dark">Construcción de APIs de forma sencilla y rápida</h4>
                     </div>
                   </div>
                 </div>
@@ -448,45 +460,61 @@
     </main>
 
 
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h6>Fuentes Oficiales</h65>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.java.com/es/" target="_blank" class="text-light fs-6"><p></p>Página oficial de Java</a></li>
-                        <li><a href="https://docs.oracle.com/en/java/" target="_blank" class="text-light fs-6">Documentación oficial</a></li>
-                        <li><a href="https://www.oracle.com/java/technologies/community-glance.html" target="_blank" class="text-light fs-6">SE Community - Java</a></li>
-                    </ul>
+    <footer>
+      <br>
+        <button class="btn btn-secondary btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Enlaces de Interés</button>
+        <br>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          
+        <div class="offcanvas-body">
+
+            <footer class="footer-offcanvas text-light">
+                <div class="container">
+                  <br>
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Fuentes Oficiales</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Página oficial en Microsoft</a></li>
+                                <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Documentación oficial</a></li>
+                                <li><a href="https://learn.microsoft.com/en-us/dotnet/maui/?view=net-maui-8.0" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">.Net Microsoft</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6 style="font-size: 16px;">Frameworks</h6>
+                          <ul class="list-unstyled">
+                              <li><a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Blazor</a></li>
+                              <li><a href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Aspnetcore-8</a></li>
+                              <li><a href="https://learn.microsoft.com/en-us/aspnet/core/signalr/target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Signal</a></li>
+                            
+                            </ul>
+                      </div>
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Sitios Recomendados</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://learn.microsoft.com/en-us/xamarin" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Xamarin</a></li>
+                                <li><a href="https://dotnet.microsoft.com/en-us/learntocode" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Lear C# microsoft</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Comunidades</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://dotnet.microsoft.com/es-es/platform/community" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Community</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                      <hr class="my-2 bg-light">
+                      <div id="infoContacto" class="text-center">
+                        <br>
+                        <p class="mb-1 text-center text-light" style="font-size: 14px;" >&copy; 2023 byZerojLabs</p>
+                        <p class="mb-1 text-center" style="font-size: 14px;"><a href="mailto:ZerojLabs@gmail.com" class="text-light" style="text-decoration: none; font-size: 14px;">ZerojLabs@gmail.com</a></p>
+                         
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h6>Sitios Recomendados</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.codecademy.com/learn/learn-java" target="_blank" class="text-light">Codecademy - Java</a></li>
-                        <li><a href="https://www.learnjavaonline.org/" target="_blank" class="text-light">Learnjavaonline</a></li>
-                        <li><a href="https://tomcat.apache.org/" target="_blank" class="text-light">Apache Tomcat</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6>Comunidades</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="https://stackoverflow.com/questions/tagged/java" target="_blank" class="text-light">Stack Overflow - Java</a></li>
-                        <li><a href="https://www.reddit.com/r/java" target="_blank" class="text-light">Reddit - r/Java</a></li>
-                        <li><a href="https://www.pythonanywhere.com/forums/" target="_blank" class="text-light">PythonAnywhere Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Contacto</h5>
-                    <p class="mb-1">&copy; 2023 byZerojLabs</p>
-                    <p class="mb-1">Email: ZerojLabs@python.com</p>
-                </div>
-            </div>
-            <hr class="my-4 bg-light">
-            <div class="text-center">
-                <p class="mb-2">Descubre más sobre Java y mejora tus habilidades de programación.</p>
-                <br>
-                <a href="#top" class="btn btn-outline-light">Inicio</a>
-            </div>
+            </footer>
+          </div>
         </div>
     </footer>
     

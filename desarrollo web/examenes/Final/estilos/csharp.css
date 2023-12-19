@@ -40,7 +40,7 @@ header p {
     padding-top: 55px;
     font-size: 1.2em;
     font-style: italic;
-    color: rgb(163, 163, 163);
+    color: rgb(211, 204, 204);
 }
 
 nav {
@@ -154,3 +154,27 @@ footer {
         opacity: 1;
     }
 }
+
+/* Estilos footer */
+.footer-offcanvas {
+    background-color: #31302a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#offcanvasBottom{
+    background-color: #31302a;
+}
+
+/* permite que se muestre sin barra de desplazamamiento */
+.offcanvas {
+    max-height: 100%;
+    overflow-y: auto;
+    border: none;
+    box-shadow: none;
+}
+
+.offcanvas.show {
+    height: auto !important;
+}
+

@@ -13,18 +13,38 @@
 <body>
     
     <header>
-        <div><img src="../img/python.png" width="120px" height="120px" alt="python"></div>
-        <div><h1>Python</h1></div>
-        <div><p>Explora las maravillas de Python, desde las bases hasta conceptos avanzados.</p></div>
+        <div><img src="../img/python.png" width="100px" height="100px" alt="python"></div>
+        <div><h1></h1></div>
+        <div><p>Explora Python, desde las bases hasta conceptos avanzados.</p></div>
     </header>
 
+
     <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="#introduccion">Conceptos Básicos</a>
-        <a href="#data-structures">Estructuras de Datos</a>
-        <a href="#advanced">Conceptos Avanzados</a>
-        <a href="#modules">Módulos y Frametworks</a>
-    </nav>
+      <div class="row">
+          <div class="col-md-1 text-start">
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Python
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="../pages/cSharp.html">C#</a></li>
+                <li><a class="dropdown-item" href="../pages/cplusplus.html">C++</a></li>
+                <li><a class="dropdown-item" href="../pages/java.html">Java</a></li>
+                <li><a class="dropdown-item" href="../pages/kotlin.html">Kotlin</a></li>
+                <li><a class="dropdown-item" href="../pages/javascript.html">JavaScript</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="col-md-11 text-center">
+          <a href="../index.html">Inicio</a>
+          <a href="#introduccion">Conceptos Básicos</a>
+          <a href="#data-structures">Estructuras de Datos</a>
+          <a href="#advanced">Conceptos Avanzados</a>
+          <a href="#modules">Módulos y Frameworks</a>
+        </div>
+    </div>
+  </nav>
+
 
     <main>
 
@@ -33,12 +53,14 @@
             <div class="row my-4">
                 <div class="col-md-4 d-flex align-items-center text-center">
                     <article>
-                        <h2>Introduccion</h2><br>
+                        <h2>Python</h2><br>
                         <p>Python se destaca por su sintaxis clara y concisa. Su diseño hace que sea fácil leer y escribir código, lo que facilita su aprendizaje para principiantes.</p>
                     </article>
                 </div>
                 <div class="col-md-3 text-left text-center">
                 </div>
+
+
                     <!-- Ejemplos de Código Section -->
                 <div id="ejemplos" class="col-md-4 text-right">
                     <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -90,7 +112,7 @@
                             <div class="card-body text-start">
                             <h5 class="card-title">Tipos de datos básicos</h5>
                             <br>
-                            <p class="card-text">&check; Numericos</p>
+                            <p class="card-text">&check; Numéricos</p>
                             <p class="card-text">&check; Punto Flotante</p>
                             <p class="card-text">&check; Texto</p>
                             <p class="card-text">&check; Boleanos</p>
@@ -395,14 +417,11 @@
                   <div class="carousel-item active">
                     <img src="../img/python/tensorflow.jpg" class="d-block mx-auto img-fluid" alt="tensorflow">
                     <div class="carousel-caption d-none d-md-block">
-                      <h3 class="text-dark">Aprendizaje automático e inteligencia artificial.</h3>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../img/python/django.jpg" class="d-block mx-auto img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h4 class="text-dark">Desarrollo Web.</h4>
-
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -413,19 +432,16 @@
                   <div class="carousel-item">
                     <img src="../img/python/pandas.png" class="d-block mx-auto img-fluid" alt="...">
                     <div class="carousel-caption d-none d-md-block">>
-                        <h4 class="text-dark">Manejo y análisis de datos.</h4>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../img/python/numpy.png" class="d-block mx-auto img-fluid" alt="...">
                     <div class="carousel-caption text-end text-center d-md-block">>
-                        <h4 class="text-dark"> Cálculos matemáticos y científicos.</h4>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../img/python/fastApi.png" class="d-block mx-auto img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="text-dark">Construcción de APIs de forma sencilla y rápida</h4>
+                    <div class="carousel-caption d-none d-md-block">>
                     </div>
                   </div>
                 </div>
@@ -445,45 +461,62 @@
     </main>
 
 
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h6>Fuentes Oficiales</h65>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.python.org/" target="_blank" class="text-light fs-6"><p></p>Página oficial de Python</a></li>
-                        <li><a href="https://docs.python.org/" target="_blank" class="text-light fs-6">Documentación oficial</a></li>
-                        <li><a href="https://dev.to/c/python" target="_blank" class="text-light fs-6">DEV Community - Python</a></li>
-                    </ul>
+    <footer>
+      <br>
+        <button class="btn btn-secondary btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Enlaces de Interés</button>
+        <br>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          
+        <div class="offcanvas-body">
+
+            <footer class="footer-offcanvas text-light">
+                <div class="container">
+                  <br>
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Fuentes Oficiales</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.python.org/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Página oficial de Python</a></li>
+                                <li><a href="https://docs.python.org/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Documentación oficial</a></li>
+                                <li><a href="https://www.djangoproject.com/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Django</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6 style="font-size: 16px;">Frameworks</h6>
+                          <ul class="list-unstyled">
+                              <li><a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Flask</a></li>
+                              <li><a href="https://www.tensorflow.org/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Tensorflow</a></li>
+                              <li><a href="https://fastapi.tiangolo.com/ target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">FastApi</a></li>
+                            
+                            </ul>
+                      </div>
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Sitios Recomendados</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://realpython.com/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Real Python</a></li>
+                                <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">GeeksforGeeks - Python</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Comunidades</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://stackoverflow.com/questions/tagged/python" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Stack Overflow - Python</a></li>
+                                <li><a href="https://reddit.com/r/Python" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Reddit - r/Python</a></li>
+                                <li><a href="https://www.pythonanywhere.com/forums/" target="_blank" class="text-light" style="text-decoration: none; font-size: 12px;">PythonAnywhere Forums</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                      <hr class="my-2 bg-light">
+                      <div id="infoContacto" class="text-center">
+                        <br>
+                        <p class="mb-1 text-center text-light" style="font-size: 14px;" >&copy; 2023 byZerojLabs</p>
+                        <p class="mb-1 text-center" style="font-size: 14px;"><a href="mailto:ZerojLabs@gmail.com" class="text-light" style="text-decoration: none; font-size: 14px;">ZerojLabs@gmail.com</a></p>
+                         
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h6>Sitios Recomendados</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="https://realpython.com/" target="_blank" class="text-light">Real Python</a></li>
-                        <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank" class="text-light">GeeksforGeeks - Python</a></li>
-                        <li><a href="https://www.djangoproject.com/" target="_blank" class="text-light">Django - Framework web en Python</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6>Comunidades</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="https://stackoverflow.com/questions/tagged/python" target="_blank" class="text-light">Stack Overflow - Python</a></li>
-                        <li><a href="https://reddit.com/r/Python" target="_blank" class="text-light">Reddit - r/Python</a></li>
-                        <li><a href="https://www.pythonanywhere.com/forums/" target="_blank" class="text-light">PythonAnywhere Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Contacto</h5>
-                    <p class="mb-1">&copy; 2023 byZerojLabs</p>
-                    <p class="mb-1">Email: ZerojLabs@python.com</p>
-                </div>
-            </div>
-            <hr class="my-4 bg-light">
-            <div class="text-center">
-                <p class="mb-2">Descubre más sobre Python y mejora tus habilidades de programación.</p>
-                <br>
-                <a href="#top" class="btn btn-outline-light">Inicio</a>
-            </div>
+            </footer>
+          </div>
         </div>
     </footer>
     

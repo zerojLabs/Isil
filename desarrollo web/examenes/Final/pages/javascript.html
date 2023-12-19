@@ -3,88 +3,516 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeX -JS</title>
+    <title>CodeX -Python</title>
     <link rel="icon" href="../ico/icoL.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/javascript.css">
+    <link rel="stylesheet" href="../estilos/python.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
     <header>
-        <img src="../img/js.png" width="150px" height="150px" alt="Descripción de la imagen">
-        <h1>JavaScript</h1>
-        <p>Explora el lenguaje de programación JavaScript y su uso en el desarrollo web.</p>
+        <div><img src="../img/js.png" width="80px" height="80px" alt="python"></div>
+        <div><h1></h1></div>
+        <div><p>Conoce el corazón de la programación web las experiencias interactivas y modernas en todos los navegadores..</p></div>
     </header>
 
     <nav>
-        <a href="../index.html">Inicio</a> |
-        <a href="#introduccion">Introducción</a> |
-        <a href="#caracteristicas">Características</a> |
-        <a href="#ejemplos">Ejemplos de Código</a> |
-        <a href="#frameworks">Frameworks</a>
-    </nav>
+      <div class="row">
+          <div class="col-md-1 text-start ">
+            <div id ="botonGrupo" class="btn-group">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                JavaScript
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="../pages/cSharp.html">c#</a></li>
+                <li><a class="dropdown-item" href="../pages/cplusplus.html">C++</a></li>
+                <li><a class="dropdown-item" href="../pages/java.html">Java</a></li>
+                <li><a class="dropdown-item" href="../pages/kotlin.html">Kotlin</a></li>
+                <li><a class="dropdown-item" href="../pages/python.html">Python</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="col-md-11 text-center">
+          <a href="../index.html">Inicio</a>
+          <a href="#introduccion">Conceptos Básicos</a>
+          <a href="#data-structures">Estructuras de Datos</a>
+          <a href="#advanced">Conceptos Avanzados</a>
+          <a href="#modules">Módulos y Frametworks</a>
+        </div>
+    </div>
+  </nav>
 
     <main>
-        <!-- Introducción Section -->
+
+
+        <!-- ==========================================================================================
+        <!-- Conceptos Básicos Section -->
         <section id="introduccion">
-            <h2>Introducción</h2>
-            <article>
-                <p>JavaScript es un lenguaje de programación de alto nivel que se utiliza principalmente en el desarrollo web para crear interactividad en páginas.</p>
-                <p>En esta sección, exploraremos los conceptos básicos de JavaScript y cómo se utiliza en el desarrollo web.</p>
-            </article>
-        </section>
-
-        <!-- Características Section -->
-        <section id="caracteristicas">
-            <h2>Características</h2>
-            <article>
-                <h3>Lenguaje Interpretado</h3>
-                <p>JavaScript es un lenguaje interpretado, lo que significa que se ejecuta directamente en el navegador del usuario sin necesidad de compilación previa.</p>
-
-                <h3>Desarrollo Web</h3>
-                <p>Es ampliamente utilizado para mejorar la interactividad en sitios web, manipular el DOM y realizar solicitudes asíncronas mediante AJAX.</p>
-
-                <!-- Agrega más características según sea necesario -->
-
-                <h3>Frameworks Populares</h3>
-                <p>Frameworks como React, Angular y Vue.js son populares en el desarrollo web con JavaScript, simplificando la creación de interfaces de usuario interactivas.</p>
-            </article>
-        </section>
-
-        <!-- Ejemplos de Código Section -->
-        <section id="ejemplos">
-            <h2>Ejemplos de Código</h2>
-            <article>
-                <h3>Hola, Mundo!</h3>
-                <div class="codigo-ejemplo">
-                    <pre><code>
-console.log("Hola, Mundo!");
-                    </code></pre>
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>JavaScript</h2><br>
+                        <p>El lenguaje de programación del lado del cliente, es esencial para el desarrollo web interactivo, potenciando la creación de experiencias dinámicas y ágiles en el navegador.</p>
+                    </article>
+                </div>
+                <div class="col-md-3 text-left text-center">
                 </div>
 
-                <h3>Manipulación del DOM</h3>
-                <div class="codigo-ejemplo">
-                    <pre><code>
-// Obtener un elemento por su ID
-var miElemento = document.getElementById("miElemento");
-
-// Cambiar el contenido del elemento
-miElemento.innerHTML = "¡Hola, JavaScript!";
-                    </code></pre>
+                <!-- carrusel de imagenes -->
+                    <!-- Ejemplos de Código Section -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="../img/js/comentarios.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="../img/js/print.png" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/js/tiposDatos.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/js/condiciones.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/js/bucles.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/js/def3.png" class="d-block mx-auto img-fluid" alt="variables">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-            </article>
+            </div>    
         </section>
 
-        <!-- Frameworks Section -->
-        <section id="frameworks">
-            <h2>Frameworks</h2>
-            <article>
-                <p>JavaScript cuenta con una amplia variedad de frameworks que facilitan el desarrollo web, algunos de los más populares son React, Angular y Vue.js.</p>
-            </article>
+
+        <section>
+            <!-- tipos de datos -->
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="card mb-2" style="max-width: 600px;">
+                        <div class="row g-0">
+                        <div class="col-md-8">
+                            <img src="../img/js/tiposDatos.png" class="img-fluid h-100 rounded-start" alt="tipos de datos">
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center text-center">
+                            <div class="card-body text-start">
+                            <h5 class="card-title">Tipos de datos básicos</h5>
+                            <br>
+                            <p class="card-text">&check; Numericos</p>
+                            <p class="card-text">&check; Punto Flotante</p>
+                            <p class="card-text">&check; Texto</p>
+                            <p class="card-text">&check; Boleanos</p>
+                            <br><br>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-6 text-center">
+                  <div class="card mb-2" style="max-width: 600px;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <img src="../img/js/operadores.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-4 d-flex align-items-center text-center">
+                        <div class="card-body text-start">
+                          <h5 class="card-title">Operadores</h5>
+                          <br>
+                          <p class="card-text">&check; Suma +</p>
+                          <p class="card-text">&check; Resta -</p>
+                          <p class="card-text">&check; Multiplicación *</p>
+                          <p class="card-text">&check; División /</p>
+                          <p class="card-text">&check; Modulo %</p>
+                          <p class="card-text">&check; Potencia **</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
         </section>
+
+         <!-- ===================================================================================================================== -->
+
+
+        <!-- Estructuras de control if, else, while, for -->
+        <section id="data-structures">
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Estructuras de Control</h2><br>
+                        <p>Permiten a los programadores tomar decisiones y repetir tareas. 
+                            Las dos principales categorías de estructuras de control son las condicionales y los bucles.</p>
+                    </article>
+                </div>
+                
+                <div class="col-md-3 text-left text-center">
+                </div>
+                    <!-- Carrusel -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/if-else.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../img/if-else2.png"" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+            
+
+
+            <div class="row">
+                <div class="col">
+                    <br><br><br>
+                </div>
+            </div>
+
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col d-flex align-items-center text-center">
+                  <div class="card h-100">
+                    <img src="../img/js/condiciones.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <br>
+                      <h5 class="card-title">If - Else</h5>
+                      <p class="card-text"> La estructura condicional if permite ejecutar un bloque de código si una condición es verdadera.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 text-left text-center"></div>
+    
+                <div class="col d-flex align-items-center text-center">
+                  <div class="card h-100">
+                    <img src="../img/js/elif.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <br>
+                      <h5 class="card-title">If - Else if - Else</h5>
+                      <p class="card-text">La cláusula elif (else if) permite evaluar condiciones adicionales 
+                            y una cláusula else para manejar el caso en que ninguna de las condiciones anteriores sea verdadera.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+
+        <!-- ===================================================================================================================== -->
+
+        <!-- bucles e interaciones -->
+        <section id="bucles">
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <!-- Ejemplos de Código Section -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/for.jpg" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="8000">
+                                <img src="../img/while.gif" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 d-flex align-items-center">
+                    <article class="text-center">
+                        <h2>Bucles</h2><br>
+                        <p>Estructuras de control de flujo en programación que permiten 
+                            ejecutar un bloque de código de manera repetida.</p>
+                    </article>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <br><br><br>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/while.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">While</h5>
+                          <p class="card-text">Se utiliza cuando no se conoce de antemano cuántas iteraciones serán necesarias y se ejecutará mientras una condición sea verdadera.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/for.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">For</h5>
+                          <p class="card-text">Se utiliza cuando se conoce la cantidad exacta de iteraciones que se deben realizar.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/break.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Break</h5>
+                          <p class="card-text">Se utiliza para salir inmediatamente de un bucle.</p>
+                          <p class="card-text">Cuando se encuentra la palabra clave break dentro de un bucle (for o while), el bucle se interrumpe y el control del programa pasa a la siguiente instrucción después del bucle.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/continue.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Continue</h5>
+                          <p class="card-text">Se utiliza para pasar a la siguiente iteración del bucle sin ejecutar el resto del código dentro del bucle.</p>
+                          <P class="card-text">Cuando se encuentra la palabra clave continue, el control del programa vuelve al principio del bucle para la siguiente iteración</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+
+         <!-- ===================================================================================================================== -->
+
+        <!-- Funciones -->
+        <section id="advanced">
+            <div class="row my-4">
+                <div class="col-md-4 d-flex align-items-center text-center">
+                    <article>
+                        <h2>Funciones</h2><br>
+                        <p>Es un bloque de código reutilizable que realiza una tarea específica. Las funciones permiten organizar y estructurar el código al dividirlo en piezas más pequeñas y manejables. 
+                            Esto facilita la comprensión del código, promueve la reutilización y facilita el mantenimiento.</p>
+                    </article>
+                </div>
+                
+                <div class="col-md-3 text-left text-center">
+                </div>
+                    <!-- Ejemplos de Código Section -->
+                <div id="ejemplos" class="col-md-4 text-right">
+                    <div id="carouselExampleInterval" class="carousel slide carousel-inner" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active" data-bs-interval="6000">
+                                <img src="../img/python/funciones2.png" class="d-block mx-auto img-fluid" alt="comentarios">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="../img/python/funciones3.jpg"" class="d-block mx-auto img-fluid" alt="print">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+
+                <div class="row">
+                    <div class="col">
+                        <br><br><br>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/def.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Definición y Llamada</h5>
+                          <p class="card-text">Para definir una función en Python, se utiliza la palabra clave def, seguida del nombre de la función y paréntesis que pueden contener parámetros.</p>
+                        <p class="card-text">Para ejecutar o "llamar" una función, simplemente se utiliza su nombre seguido de paréntesis.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/def2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Parametros y Argumentos</h5>
+                          <p class="card-text">Las funciones pueden aceptar parámetros, que son valores que la función utiliza durante su ejecución.</p>
+                          <p class="card-text">Los argumentos son los valores reales que se pasan a la función cuando se llama.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/def3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Valor de Retorno</h5>
+                          <p class="card-text">Una función puede devolver un valor utilizando la palabra clave return.</p>
+                          <P class="card-text">Esto permite que el resultado de la función se utilice en otras partes del programa.</P>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center text-center">
+                      <div class="card h-100">
+                        <img src="../img/js/def4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ámbito de Variables</h5>
+                          <p class="card-text">Las variables definidas dentro de una función tienen un ámbito local.</p>
+                          <P class="card-text">Lo que significa que solo son accesibles dentro de esa función. Solo las variables fuera de la función tienen un ámbito global.</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+
+        <section id="modules">
+            <!-- Modulo y Frametworks -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <h4>Frameworks y Módulos</h4>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/js/electron.png" class="d-block mx-auto img-fluid" alt="tensorflow">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/js/node.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/js/react.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/js/express.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/js/vue.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption text-end text-center d-md-block">>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/js/angular.png" class="d-block mx-auto img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+        </section>
+
+    
     </main>
 
+
     <footer>
-        <p>&copy; 2023 JavaScript - Codex</p>
+      <br>
+        <button class="btn btn-secondary btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Enlaces de Interés</button>
+        <br>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          
+        <div class="offcanvas-body">
+
+            <footer class="footer-offcanvas text-light">
+                <div class="container">
+                  <br>
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Fuentes Oficiales</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Mozilla javascript</a></li>
+                                                              </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6 style="font-size: 16px;">Frameworks</h6>
+                          <ul class="list-unstyled">
+                              <li><a href="https://nodejs.org/en" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Nodejs</a></li>
+                              <li><a href="https://react.dev/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">React</a></li>
+                              <li><a href="https://vuejs.org/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">Vuejs</a></l
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Sitios Recomendados</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.javascript.com/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">learn</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h6 style="font-size: 16px;">Comunidades</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://ibaguejs.com/" target="_blank" class="text-light" style="text-decoration: none; font-size: 13px;">IbagueJs</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                      <hr class="my-2 bg-light">
+                      <div id="infoContacto" class="text-center">
+                        <br>
+                        <p class="mb-1 text-center text-light" style="font-size: 14px;" >&copy; 2023 byZerojLabs</p>
+                        <p class="mb-1 text-center" style="font-size: 14px;"><a href="mailto:ZerojLabs@gmail.com" class="text-light" style="text-decoration: none; font-size: 14px;">ZerojLabs@gmail.com</a></p>
+                         
+                    </div>
+                </div>
+            </footer>
+          </div>
+        </div>
     </footer>
+    
 </body>
 </html>

@@ -67,8 +67,8 @@ nav a {
 
 /* ESTILOS PARA LOS ENLACES DE NAV.. AL PASAR EL MOUSE SOBRE ELLOS */
 nav a:hover {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #f1da0a;
+    color: #000000;
 }
 
 main {
@@ -156,4 +156,27 @@ footer {
     to {
         opacity: 1;
     }
+}
+
+/* Estilos footer */
+.footer-offcanvas {
+    background-color: #31302a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#offcanvasBottom{
+    background-color: #31302a;
+}
+
+/* permite que se muestre sin barra de desplazamamiento */
+.offcanvas {
+    max-height: 100%;
+    overflow-y: auto;
+    border: none;
+    box-shadow: none;
+}
+
+.offcanvas.show {
+    height: auto !important;
 }
