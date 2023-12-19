@@ -90,9 +90,6 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-section:hover {
-    transform: scale(1.05);
-}
 
 article {
     padding: 20px;

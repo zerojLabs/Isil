@@ -84,6 +84,7 @@ main {
 .img-fluid {
     max-width: 100%; /*ancho máximo al 100% del contenedor padre */
     max-height: 400px; /*ltura máxima a 300 px */
+    max-width: 500px
 }
 
 

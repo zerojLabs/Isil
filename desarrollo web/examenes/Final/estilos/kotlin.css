@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #814a0a;
+    background-color: #b86c15;
     height: 300px;
     color: #fff;
     text-align: center;
@@ -40,7 +40,7 @@ header p {
     padding-top: 55px;
     font-size: 1.2em;
     font-style: italic;
-    color: rgb(163, 163, 163);
+    color: rgb(231, 231, 231);
 }
 
 nav {
@@ -65,10 +65,9 @@ nav a {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* ESTILOS PARA LOS ENLACES DE NAV.. AL PASAR EL MOUSE SOBRE ELLOS */
 nav a:hover {
-    background-color: #c07025;
-    color: #fff;
+    background-color: #f1a00a;
+    color: #2b2828;
 }
 
 main {
@@ -80,6 +79,14 @@ main {
     animation: fadeIn 0.5s ease-out forwards;
 }
 
+/* introduccion y carousel */
+.img-fluid {
+    max-width: 100%; /*ancho máximo al 100% del contenedor padre */
+    max-height: 400px; /*ltura máxima a 300 px */
+    max-width: 500px
+}
+
+
 section {
     background-color: #fff;
     border-radius: 10px;
@@ -88,10 +95,6 @@ section {
     max-width: 100%;
     padding: 30px 50px 50px 50px;
     transition: transform 0.3s ease-in-out;
-}
-
-section:hover {
-    transform: scale(1.05);
 }
 
 article {
